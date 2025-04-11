@@ -1,10 +1,8 @@
 ---
 layout: home
-title: Welcome to My Site
+title: Welcome to Yathin's World
 ---
 
 # Hello World 👋
-
-This is my GitHub Pages personal site.
 
 Feel free to explore and learn more about me!
