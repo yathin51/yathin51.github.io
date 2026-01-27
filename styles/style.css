@@ -1,0 +1,244 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Full viewport height */
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Section */
+header {
+    background-color: #004080;
+    /* Bold blue background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    /* Enable positioning for child elements */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://via.placeholder.com/1500x500');
+    /* Replace with your desired cover image URL */
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 5px auto;
+    max-width: 1200px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid #004080;
+    background-color: #f9f9f9;
+}
+
+section h2 {
+    color: #004080;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #004080;
+    /* Blue background */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    flex: 0 0 auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Navigation Links */
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #004080;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+}
+
+/* Icon Styling */
+.icon {
+    width: 40px;
+    /* Set the width of the icon */
+    height: 40px;
+    /* Set the height of the icon */
+    margin: 10px;
+    /* Add some spacing around the icon */
+}
+
+/* Skills Section Styling */
+.skills-section {
+    border: 2px solid #004080;
+    /* Blue border */
+    border-radius: 8px;
+    /* Rounded corners */
+    padding: 20px;
+    /* Add padding inside the section */
+    margin: 20px 0;
+    /* Add spacing between sections */
+    background-color: #f9f9f9;
+    /* Light background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+/* Skills List Styling */
+.skills-list {
+    display: flex;
+    /* Use Flexbox for layout */
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next row */
+    justify-content: space-evenly;
+    /* Distribute items evenly */
+    gap: 20px;
+    /* Add spacing between items */
+}
+
+.skills-list div {
+    flex: 1 1 calc(25% - 20px);
+    /* Each item takes up 25% of the row minus the gap */
+    max-width: calc(25% - 20px);
+    /* Ensure items don't exceed 25% width */
+    text-align: center;
+    /* Center-align the content */
+    box-sizing: border-box;
+    /* Include padding and border in width/height */
+}
+
+/* Contact Icons Styling */
+.contact-icons {
+    display: flex;
+    /* Use Flexbox for layout */
+    justify-content: center;
+    /* Center the icons horizontally */
+    align-items: center;
+    /* Align icons vertically */
+    gap: 20px;
+    /* Add spacing between icons */
+}
+
+.contact-icon {
+    width: 40px;
+    /* Set the width of the icon */
+    height: 40px;
+    /* Set the height of the icon */
+    transition: transform 0.2s ease;
+    /* Add a hover effect */
+}
+
+.contact-icon:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge the icon on hover */
+}
+
+header,
+section,
+nav {
+    flex: 0 0 auto;
+    /* Content takes up only as much space as needed */
+}
+
+/* Profile Image Styling */
+.profile-image {
+    position: absolute;
+    /* Position the image within the header */
+    top: 10px;
+    /* Distance from the top of the header */
+    right: 10px;
+    /* Distance from the right of the header */
+    width: 100px;
+    /* Set the width of the image */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 50%;
+    /* Make the image circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
+}
+
+/* Certification Section Styling */
+section>div {
+    margin-bottom: 20px;
+    /* Add spacing between certifications */
+    padding-bottom: 10px;
+    /* Add padding at the bottom */
+    border-bottom: 1px solid #ccc;
+    /* Add a light gray line as a separator */
+}
+
+section>div:last-child {
+    border-bottom: none;
+    /* Remove the line for the last certification */
+}

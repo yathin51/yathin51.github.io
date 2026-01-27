@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Certifications of Yathin" />
+    <title>Certifications</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Certifications</h1>
+    </header>
+    <section>
+      <h2>Certifications</h2>
+      <div>
+        <h3>Oracle Certified Associate, Java SE 8 Programmer</h3>
+        <p>Issued by Oracle University, 2025</p>
+        <button
+          onclick="showCertificate('./certifications/oracle_java_certificate.jpg')"
+        >
+          View Certificate
+        </button>
+      </div>
+      <div>
+        <h3>Modern Javascript with ES6</h3>
+        <p>Issued by Coursera, 2025</p>
+        <button
+          onclick="showCertificate('./certifications/javascript_es6_certificate.jpg')"
+        >
+          View Certificate
+        </button>
+      </div>
+      <div>
+        <h3>Kafka Fundamentals</h3>
+        <p>Issued by Coursera, 2025</p>
+        <button
+          onclick="showCertificate('./certifications/kafka_fundamentals_certificate.jpg')"
+        >
+          View Certificate
+        </button>
+      </div>
+      <div>
+        <h3>Javascript with ReactJS Bootcamp</h3>
+        <p>Issued by BIT Mesra, 2021</p>
+        <button
+          onclick="showCertificate('./certifications/js_react_bootcamp.jpg')"
+        >
+          View Certificate
+        </button>
+      </div>
+      <div>
+        <h3>Web Component Development using JAVA Technologies</h3>
+        <p>Issued by NIIT, 2013</p>
+        <button
+          onclick="showCertificate('./certifications/java_web_component_certificate.jpg')"
+        >
+          View Certificate
+        </button>
+      </div>
+    </section>
+    <nav class="return-nav">
+      <a href="index.html">Return to Home Page</a>
+    </nav>
+    <footer>
+      <p>&copy; 2025 Yathin™. All rights reserved.</p>
+    </footer>
+    <script>
+      function showCertificate(imagePath) {
+        const newWindow = window.open("", "_blank");
+        newWindow.document.write(
+          `<img src="${imagePath}" alt="Certificate" style="width:100%; height:auto;">`
+        );
+      }
+    </script>
+  </body>
+</html>
