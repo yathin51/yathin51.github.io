@@ -1,56 +1,316 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Experience of Yathin" />
-    <title>Experience</title>
+    <meta
+      name="description"
+      content="Employment & Experience of Yathin Kullachana Somaiah - Senior Staff Engineer & Platform Architect."
+    />
+    <title>Employment Experience | Yathin Kullachana Somaiah</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header>
-      <h1>Experience</h1>
+    <!-- Navbar -->
+    <header class="navbar-wrapper">
+      <div class="container navbar">
+        <a href="index.html" class="nav-brand">
+          <div class="nav-brand-logo">YS</div>
+          <div class="nav-brand-text">
+            Yathin K. Somaiah
+            <span>Senior Staff Engineer</span>
+          </div>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="experience.html" class="active">Employment</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="docs/Yathin_Kullachana_Somaiah_Resume_EN.pdf" target="_blank" class="resume-action-btn">
+            Resume (PDF)
+          </a>
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+            <span id="theme-toggle-icon">☀️</span>
+          </button>
+          <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Toggle menu">☰</button>
+        </div>
+      </div>
     </header>
-    <section>
-      <h2>Organizations Worked In</h2>
 
-      <div>
-        <h3>
-          <a href="./experience/altimetrik.html"
-            >Altimetrik India Private Limited</a
-          >
-        </h3>
+    <main class="container" style="padding-top: 40px; padding-bottom: 60px;">
+      <div class="section-header" style="text-align: left; max-width: 100%;">
+        <span class="section-eyebrow">Career History</span>
+        <h1 class="section-title">Employment & Technical Leadership</h1>
+        <p class="section-desc">
+          Detailed overview of full-time professional engineering roles, key responsibilities, architectural accomplishments, and quantifiable impact across global enterprises.
+        </p>
       </div>
 
-      <div>
-        <h3>
-          <a href="./experience/apiwiz.html"
-            >APIwiz (Itorix Software Pvt. Ltd.)</a
-          >
-        </h3>
+      <div class="experience-timeline">
+        <!-- 1. Altimetrik -->
+        <article class="experience-card">
+          <div class="card-header-flex">
+            <div class="card-role-block">
+              <h3>Senior Staff Engineer — Product & Platform Integration</h3>
+              <div class="company-meta">
+                <span class="company-name">Altimetrik India Private Limited</span>
+                <span>•</span>
+                <span class="company-loc">📍 Bengaluru, India (Client: Citibank BSI)</span>
+              </div>
+            </div>
+            <span class="period-badge">Mar 2024 – Dec 2025</span>
+          </div>
+
+          <p class="card-summary-p">
+            Led the design, delivery, and scalability of backend platform services for Citibank BSI (Payments & E-Commerce) and BHN retail financial platforms.
+          </p>
+
+          <ul class="key-achievements-list">
+            <li><strong>High-Throughput Concurrency:</strong> Scaled event-driven microservices sustaining <strong>800+ TPS</strong> with minimal cloud resource overhead by enforcing distributed locks and multithreading optimization.</li>
+            <li><strong>Citibank BSI Payments:</strong> Operated high-concurrency event-driven transaction streams utilizing <strong>Apache Kafka</strong>, enforcing distributed transaction idempotency and delivery guarantees for rigorous financial auditability.</li>
+            <li><strong>20%+ Cloud Cost Optimization:</strong> Engineered containerized deployments on <strong>AWS (EC2, S3, SNS/SQS)</strong> and OpenShift, optimizing cloud allocation and reducing cloud spend by over 20%.</li>
+            <li><strong>BitBucket to GitHub Migration:</strong> Automated the end-to-end migration of nearly <strong>150 repositories</strong> with automated CI/CD and security vulnerability scanning via BlackDuck.</li>
+          </ul>
+
+          <div class="card-footer-tags">
+            <div class="tech-tags-group">
+              <span class="tech-tag">Java 17</span>
+              <span class="tech-tag">Spring Boot 3.2</span>
+              <span class="tech-tag">Apache Kafka</span>
+              <span class="tech-tag">AWS</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Redis</span>
+              <span class="tech-tag">Docker</span>
+            </div>
+            <a href="projects/altimetrik.html" class="card-link-btn">
+              View Altimetrik Case Studies →
+            </a>
+          </div>
+        </article>
+
+        <!-- 2. APIwiz -->
+        <article class="experience-card">
+          <div class="card-header-flex">
+            <div class="card-role-block">
+              <h3>Lead Platform & Backend Engineer</h3>
+              <div class="company-meta">
+                <span class="company-name">APIwiz (Itorix Software Pvt. Ltd.)</span>
+                <span>•</span>
+                <span class="company-loc">📍 Bengaluru, India</span>
+              </div>
+            </div>
+            <span class="period-badge">Jun 2022 – Jan 2024</span>
+          </div>
+
+          <p class="card-summary-p">
+            Pioneered the core server-side architecture and production lifecycle for flagship enterprise SaaS modules (API Compliance, Portfolio, Monitoring) from requirements discovery to scale.
+          </p>
+
+          <ul class="key-achievements-list">
+            <li><strong>API Compliance SaaS Module:</strong> Architected the flagship compliance module to enforce API contract standards and automated governance rules across enterprise gateways.</li>
+            <li><strong>1,000+ TPS Database Tuning:</strong> Designed relational and document schemas across <strong>PostgreSQL and MongoDB</strong>, executing zero-downtime database migrations under load and tuning queries to sustain 1,000+ TPS.</li>
+            <li><strong>API Gateways & In-Memory Grid:</strong> Integrated <strong>APISIX, Kong Gateway, and Hazelcast</strong> caching and rate limiting, achieving over <strong>20% cost reductions</strong> across AWS & GCP.</li>
+            <li><strong>Data Security & Cryptography:</strong> Implemented <strong>256-bit AES encryption</strong> and data masking protocols for resting and in-transit API payloads.</li>
+          </ul>
+
+          <div class="card-footer-tags">
+            <div class="tech-tags-group">
+              <span class="tech-tag">Java 11</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">Kong Gateway</span>
+              <span class="tech-tag">APISIX</span>
+              <span class="tech-tag">Hazelcast</span>
+              <span class="tech-tag">RabbitMQ</span>
+              <span class="tech-tag">PostgreSQL</span>
+            </div>
+            <a href="projects/apiwiz.html" class="card-link-btn">
+              View APIwiz Case Studies →
+            </a>
+          </div>
+        </article>
+
+        <!-- 3. Brillio -->
+        <article class="experience-card">
+          <div class="card-header-flex">
+            <div class="card-role-block">
+              <h3>Senior Technical Specialist — Backend Lead</h3>
+              <div class="company-meta">
+                <span class="company-name">Brillio Technologies</span>
+                <span>•</span>
+                <span class="company-loc">📍 Bengaluru, India (Contractor at eBay)</span>
+              </div>
+            </div>
+            <span class="period-badge">Aug 2021 – May 2022</span>
+          </div>
+
+          <p class="card-summary-p">
+            Spearheaded architectural design for modernization of eBay's internal enterprise People Management platform.
+          </p>
+
+          <ul class="key-achievements-list">
+            <li><strong>15 Microservices Modernization:</strong> Migrated legacy PL/SQL stored procedures and monolithic J2EE stack to 15 decoupled Spring Boot microservices.</li>
+            <li><strong>35% Latency Drop:</strong> Optimized relational schemas and indexes across Oracle and PostgreSQL, lowering database retrieval latency by 35% under peak traffic.</li>
+            <li><strong>SonarQube Automated Quality Gates:</strong> Enforced strict clean code standards and automated test coverage following TDD methodology.</li>
+          </ul>
+
+          <div class="card-footer-tags">
+            <div class="tech-tags-group">
+              <span class="tech-tag">Java 8/11</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">Hibernate</span>
+              <span class="tech-tag">Oracle DB</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">SonarQube</span>
+            </div>
+            <a href="projects/brillio.html" class="card-link-btn">
+              View Brillio Case Studies →
+            </a>
+          </div>
+        </article>
+
+        <!-- 4. IG Infotech -->
+        <article class="experience-card">
+          <div class="card-header-flex">
+            <div class="card-role-block">
+              <h3>Senior Backend Developer — Fintech & Onboarding</h3>
+              <div class="company-meta">
+                <span class="company-name">IG Infotech (Derivatives Trading Broker)</span>
+                <span>•</span>
+                <span class="company-loc">📍 Bengaluru, India</span>
+              </div>
+            </div>
+            <span class="period-badge">Dec 2019 – Aug 2021</span>
+          </div>
+
+          <p class="card-summary-p">
+            Engineered secure customer onboarding, KYC evaluation, and regulatory compliance modules for a premier global derivatives trading broker.
+          </p>
+
+          <ul class="key-achievements-list">
+            <li><strong>Automated Client Onboarding:</strong> Built Spring Boot authentication pipelines with OAuth2 and JWT protocols for fast user verification.</li>
+            <li><strong>25 Trading Applications:</strong> Managed and enhanced 25 critical low-latency trading applications, ensuring uptime during volatile market sessions.</li>
+            <li><strong>30% Defect Reduction:</strong> Authored comprehensive Functional and Acceptance test suites with <strong>Cucumber & JUnit</strong>, curbing post-release production defects.</li>
+          </ul>
+
+          <div class="card-footer-tags">
+            <div class="tech-tags-group">
+              <span class="tech-tag">Java 11</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">Spring Security</span>
+              <span class="tech-tag">Cucumber BDD</span>
+              <span class="tech-tag">Oracle SQL</span>
+            </div>
+            <a href="projects/iginfotech.html" class="card-link-btn">
+              View IG Infotech Case Studies →
+            </a>
+          </div>
+        </article>
+
+        <!-- 5. NSC Global -->
+        <article class="experience-card">
+          <div class="card-header-flex">
+            <div class="card-role-block">
+              <h3>Senior Software Engineer — Backend & Messaging</h3>
+              <div class="company-meta">
+                <span class="company-name">NSC Global</span>
+                <span>•</span>
+                <span class="company-loc">📍 Bengaluru, India (Contracted to AT&T)</span>
+              </div>
+            </div>
+            <span class="period-badge">Feb 2017 – Dec 2019</span>
+          </div>
+
+          <p class="card-summary-p">
+            Engineered Java RESTful APIs and asynchronous messaging architecture for AT&T's telecommunications infrastructure and enterprise business systems.
+          </p>
+
+          <ul class="key-achievements-list">
+            <li><strong>RabbitMQ & IBM WebSphere MQ:</strong> Integrated queue and topic messaging objects to decouple high-throughput transaction pipelines across 27 services.</li>
+            <li><strong>JDK8 Microservices Transition:</strong> Upgraded legacy clients to modern Spring Boot microservices with JDK8 concurrency, improving execution velocity.</li>
+            <li><strong>Mission-Critical Telecom Uptime:</strong> Managed 27 high-performance enterprise applications serving millions of US users.</li>
+          </ul>
+
+          <div class="card-footer-tags">
+            <div class="tech-tags-group">
+              <span class="tech-tag">Java 8</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">RabbitMQ</span>
+              <span class="tech-tag">IBM WebSphere MQ</span>
+              <span class="tech-tag">Jenkins CI/CD</span>
+            </div>
+            <a href="projects/nscglobal.html" class="card-link-btn">
+              View NSC Global Case Studies →
+            </a>
+          </div>
+        </article>
+
+        <!-- 6. Attra Infotech -->
+        <article class="experience-card">
+          <div class="card-header-flex">
+            <div class="card-role-block">
+              <h3>Senior Software Engineer — Enterprise Integration</h3>
+              <div class="company-meta">
+                <span class="company-name">Attra Infotech Pvt. Ltd.</span>
+                <span>•</span>
+                <span class="company-loc">📍 Bengaluru, India (Client: GE Capital)</span>
+              </div>
+            </div>
+            <span class="period-badge">Oct 2013 – Feb 2017</span>
+          </div>
+
+          <p class="card-summary-p">
+            Developed enterprise web services, financial document automation, and scheduled ETL data workflows for GE Capital's commercial financing and banking solutions.
+          </p>
+
+          <ul class="key-achievements-list">
+            <li><strong>JAX-WS WebServices:</strong> Built contract-first WSDL service producers and consumers on IBM WebSphere 8.5 supporting multi-format requests.</li>
+            <li><strong>Form-to-PDF Conversion Engine:</strong> Automated dynamic PDF document rendering utilizing Adobe LiveCycle ES2.</li>
+            <li><strong>Control-M & Informatica ETL:</strong> Streamlined automation of enterprise scheduled data jobs and secure FTP file transfers.</li>
+          </ul>
+
+          <div class="card-footer-tags">
+            <div class="tech-tags-group">
+              <span class="tech-tag">Java 7</span>
+              <span class="tech-tag">JAX-WS (SOAP)</span>
+              <span class="tech-tag">IBM WebSphere 8.5</span>
+              <span class="tech-tag">Adobe LiveCycle</span>
+              <span class="tech-tag">Control-M</span>
+            </div>
+            <a href="projects/attra.html" class="card-link-btn">
+              View Attra Case Studies →
+            </a>
+          </div>
+        </article>
       </div>
 
-      <div>
-        <h3><a href="./experience/brillio.html">Brillio Technologies</a></h3>
+      <div class="subpage-nav-bar" style="margin-top: 40px;">
+        <a href="index.html" class="btn btn-secondary">← Return to Home</a>
+        <a href="projects.html" class="btn btn-primary">Explore Featured Projects →</a>
+        <a href="docs/Yathin_Kullachana_Somaiah_Resume_EN.pdf" target="_blank" class="btn btn-outline">Download Resume (PDF)</a>
       </div>
+    </main>
 
-      <div>
-        <h3><a href="./experience/iginfotech.html">IG Infotech</a></h3>
-      </div>
-
-      <div>
-        <h3><a href="./experience/nscglobal.html">NSC Global</a></h3>
-      </div>
-
-      <div>
-        <h3><a href="./experience/attra.html">Attra Infotech Pvt. Ltd</a></h3>
-      </div>
-    </section>
-    <nav class="return-nav">
-      <a href="index.html">Return to Home Page</a>
-    </nav>
+    <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Yathin™. All rights reserved.</p>
+      <div class="container footer-inner">
+        <p>&copy; 2026 Yathin Kullachana Somaiah. All rights reserved.</p>
+      </div>
     </footer>
+
+    <script src="scripts/main.js"></script>
   </body>
 </html>

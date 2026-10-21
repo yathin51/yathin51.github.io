@@ -1,47 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="IG Infotech Experience" />
-    <title>IG Infotech Experience</title>
+    <meta name="description" content="IG Infotech Experience - Yathin Kullachana Somaiah" />
+    <title>IG Infotech Experience | Yathin Kullachana Somaiah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
-    <header>
-      <h1>IG Infotech</h1>
-      <p><strong>Senior Developer</strong> - Bengaluru</p>
-      <p>Dec 2019 – Aug 2021</p>
+    <!-- Navbar -->
+    <header class="navbar-wrapper">
+      <div class="container navbar">
+        <a href="../index.html" class="nav-brand">
+          <div class="nav-brand-logo">YS</div>
+          <div class="nav-brand-text">
+            Yathin K. Somaiah
+            <span>Senior Staff Engineer</span>
+          </div>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../experience.html" class="active">Employment</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../skills.html">Skills</a></li>
+          <li><a href="../certifications.html">Certifications</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="../docs/Yathin_Kullachana_Somaiah_Resume_EN.pdf" target="_blank" class="resume-action-btn">
+            Resume (PDF)
+          </a>
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+            <span id="theme-toggle-icon">☀️</span>
+          </button>
+        </div>
+      </div>
     </header>
-    <section>
-      <h2>Responsibilities</h2>
-      <ul>
-        <li>
-          Spearheaded configuration of Spring Boot applications to streamline
-          onboarding processes at IG, a premier derivatives trading broker.
-        </li>
-        <li>
-          Oversaw the management and enhancement of 25 robust applications,
-          ensuring seamless trading experiences for millions worldwide.
-        </li>
-        <li>
-          Developed comprehensive Functional and Acceptance test suites
-          utilizing the Cucumber framework to maintain high-quality software
-          delivery.
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="../projects/iginfotech.html">View IG Infotech Projects</a>
-        </li>
-      </ul>
-    </section>
-    <nav>
-      <a href="../experience.html">Return to Experience</a>
-      <a href="../index.html">Return to Home</a>
-    </nav>
+
+    <main class="container" style="padding-top: 40px; padding-bottom: 60px;">
+      <article class="experience-card" style="margin-bottom: 30px;">
+        <div class="card-header-flex">
+          <div class="card-role-block">
+            <span class="section-eyebrow">FinTech & Trading</span>
+            <h1 style="font-size: 2rem; margin-top: 8px;">IG Infotech</h1>
+            <div class="company-meta" style="margin-top: 6px;">
+              <span class="company-name" style="font-size: 1.1rem;">Senior Backend Developer — Fintech & Onboarding</span>
+              <span>•</span>
+              <span class="company-loc">📍 Bengaluru, India</span>
+            </div>
+          </div>
+          <span class="period-badge">December 2019 – August 2021</span>
+        </div>
+
+        <p class="card-summary-p" style="font-size: 1.05rem; margin-top: 14px;">
+          Engineered customer onboarding, regulatory screening (KYC), and core account opening services for a premier global derivatives trading broker.
+        </p>
+
+        <h3 style="font-size: 1.25rem; margin: 24px 0 14px; color: var(--accent-cyan);">Key Responsibilities & Technical Achievements</h3>
+        <ul class="key-achievements-list">
+          <li>
+            <strong>Streamlined Brokerage Onboarding:</strong> Configured Spring Boot applications with OAuth2 and JWT protocols to streamline and secure onboarding processes at IG.
+          </li>
+          <li>
+            <strong>25 High-Performance Trading Apps:</strong> Oversaw management and continuous enhancement of 25 robust applications, ensuring seamless trading experiences for millions of active traders worldwide.
+          </li>
+          <li>
+            <strong>30% Defect Reduction:</strong> Developed comprehensive Functional and Acceptance test suites utilizing <strong>Cucumber BDD</strong> and JUnit, significantly improving software delivery confidence.
+          </li>
+        </ul>
+
+        <div style="margin: 30px 0;">
+          <h4 style="font-size: 1.05rem; margin-bottom: 12px; color: var(--text-primary);">Technology Stack</h4>
+          <div class="tech-tags-group">
+            <span class="tech-tag">Java 11</span>
+            <span class="tech-tag">Spring Boot</span>
+            <span class="tech-tag">Spring Security</span>
+            <span class="tech-tag">Cucumber BDD</span>
+            <span class="tech-tag">JUnit</span>
+            <span class="tech-tag">MultiThreading</span>
+            <span class="tech-tag">Oracle SQL</span>
+          </div>
+        </div>
+
+        <div class="subpage-nav-bar" style="justify-content: flex-start; margin-top: 30px;">
+          <a href="../projects/iginfotech.html" class="btn btn-primary">View IG Infotech Case Studies →</a>
+          <a href="../experience.html" class="btn btn-secondary">← Back to Employment Timeline</a>
+        </div>
+      </article>
+    </main>
+
+    <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Yathin™. All rights reserved.</p>
+      <div class="container footer-inner">
+        <p>&copy; 2026 Yathin Kullachana Somaiah. All rights reserved.</p>
+      </div>
     </footer>
+
+    <script src="../scripts/main.js"></script>
   </body>
 </html>

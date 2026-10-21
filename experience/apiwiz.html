@@ -1,63 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="APIwiz Experience" />
-    <title>APIwiz Experience</title>
+    <meta name="description" content="APIwiz Experience - Yathin Kullachana Somaiah" />
+    <title>APIwiz Experience | Yathin Kullachana Somaiah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
-    <header>
-      <h1>APIwiz (Itorix Software Pvt. Ltd.)</h1>
-      <p><strong>Lead Platform Engineer</strong> - Bengaluru</p>
-      <p>June 2022 – Jan 2024</p>
+    <!-- Navbar -->
+    <header class="navbar-wrapper">
+      <div class="container navbar">
+        <a href="../index.html" class="nav-brand">
+          <div class="nav-brand-logo">YS</div>
+          <div class="nav-brand-text">
+            Yathin K. Somaiah
+            <span>Senior Staff Engineer</span>
+          </div>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../experience.html" class="active">Employment</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../skills.html">Skills</a></li>
+          <li><a href="../certifications.html">Certifications</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="../docs/Yathin_Kullachana_Somaiah_Resume_EN.pdf" target="_blank" class="resume-action-btn">
+            Resume (PDF)
+          </a>
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+            <span id="theme-toggle-icon">☀️</span>
+          </button>
+        </div>
+      </div>
     </header>
-    <section>
-      <h2>Responsibilities</h2>
-      <ul>
-        <li>
-          Pioneered the architecture and development of the flagship API
-          Compliance module.
-        </li>
-        <li>
-          Enhanced code robustness by integrating advanced Spring Boot features.
-        </li>
-        <li>
-          Achieved over 20% reduction in cloud expenditure across AWS and GCP
-          platforms.
-        </li>
-        <li>
-          Crafted and deployed the Portfolio module to deliver comprehensive
-          insights into system operations.
-        </li>
-        <li>
-          Boosted throughput via Hazelcast for caching & rate limiting, and
-          leveraged RabbitMQ for reliable API data synchronization.
-        </li>
-        <li>
-          Fortified data security by implementing 256-bit encryption and data
-          masking protocols.
-        </li>
-        <li>
-          Ensured high application availability and rapid on-prem deployment
-          through Kubernetes orchestration and Docker Compose.
-        </li>
-        <li>
-          Led customer engagement, delivering knowledge transfer and support for
-          newly released features.
-        </li>
-      </ul>
-      <ul>
-        <li><a href="../projects/apiwiz.html">View APIwiz Projects</a></li>
-      </ul>
-    </section>
-    <nav>
-      <a href="../experience.html">Return to Experience</a>
-      <a href="../index.html">Return to Home</a>
-    </nav>
+
+    <main class="container" style="padding-top: 40px; padding-bottom: 60px;">
+      <article class="experience-card" style="margin-bottom: 30px;">
+        <div class="card-header-flex">
+          <div class="card-role-block">
+            <span class="section-eyebrow">Platform Engineering</span>
+            <h1 style="font-size: 2rem; margin-top: 8px;">APIwiz (Itorix Software Pvt. Ltd.)</h1>
+            <div class="company-meta" style="margin-top: 6px;">
+              <span class="company-name" style="font-size: 1.1rem;">Lead Platform & Backend Engineer</span>
+              <span>•</span>
+              <span class="company-loc">📍 Bengaluru, India</span>
+            </div>
+          </div>
+          <span class="period-badge">June 2022 – January 2024</span>
+        </div>
+
+        <p class="card-summary-p" style="font-size: 1.05rem; margin-top: 14px;">
+          Pioneered server-side architecture and production lifecycle for flagship enterprise SaaS modules (API Compliance, Portfolio, Monitoring) from requirements discovery to scale.
+        </p>
+
+        <h3 style="font-size: 1.25rem; margin: 24px 0 14px; color: var(--accent-cyan);">Key Responsibilities & Technical Achievements</h3>
+        <ul class="key-achievements-list">
+          <li>
+            <strong>Flagship API Compliance SaaS Module:</strong> Pioneered the architecture and full-lifecycle development of the flagship API Compliance module, enabling automated API governance across multi-gateway enterprise environments.
+          </li>
+          <li>
+            <strong>1,000+ TPS Database Tuning:</strong> Designed scalable relational and document schemas across PostgreSQL and MongoDB, executing zero-downtime database migrations under load and tuning queries to sustain 1,000+ TPS.
+          </li>
+          <li>
+            <strong>API Gateways & Caching:</strong> Integrated Hazelcast in-memory grid for distributed caching and rate-limiting, and leveraged RabbitMQ for reliable asynchronous API data synchronization.
+          </li>
+          <li>
+            <strong>Cloud Expenditure Reduction:</strong> Achieved over <strong>20% cost reduction</strong> across AWS and GCP platforms through intelligent resource profiling and container sizing.
+          </li>
+          <li>
+            <strong>256-Bit Data Security:</strong> Fortified enterprise security by implementing 256-bit AES encryption and dynamic data masking protocols.
+          </li>
+          <li>
+            <strong>Kubernetes & Docker Orchestration:</strong> Guaranteed high application availability and rapid customer on-premise deployment via Kubernetes orchestration and Docker Compose manifests.
+          </li>
+          <li>
+            <strong>Customer Technical Leadership:</strong> Led enterprise client engagement, technical workshops, and knowledge transfer for newly released platform capabilities.
+          </li>
+        </ul>
+
+        <div style="margin: 30px 0;">
+          <h4 style="font-size: 1.05rem; margin-bottom: 12px; color: var(--text-primary);">Technology Stack</h4>
+          <div class="tech-tags-group">
+            <span class="tech-tag">Java 11</span>
+            <span class="tech-tag">Spring Boot</span>
+            <span class="tech-tag">Kong Gateway</span>
+            <span class="tech-tag">APISIX</span>
+            <span class="tech-tag">Hazelcast</span>
+            <span class="tech-tag">RabbitMQ</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">Kubernetes</span>
+            <span class="tech-tag">AWS</span>
+            <span class="tech-tag">GCP</span>
+          </div>
+        </div>
+
+        <div class="subpage-nav-bar" style="justify-content: flex-start; margin-top: 30px;">
+          <a href="../projects/apiwiz.html" class="btn btn-primary">View APIwiz Projects & Case Studies →</a>
+          <a href="../experience.html" class="btn btn-secondary">← Back to Employment Timeline</a>
+        </div>
+      </article>
+    </main>
+
+    <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Yathin™. All rights reserved.</p>
+      <div class="container footer-inner">
+        <p>&copy; 2026 Yathin Kullachana Somaiah. All rights reserved.</p>
+      </div>
     </footer>
+
+    <script src="../scripts/main.js"></script>
   </body>
 </html>

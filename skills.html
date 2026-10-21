@@ -1,233 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skills</title>
+    <meta
+      name="description"
+      content="Technical Skills & Competencies of Yathin Kullachana Somaiah - Senior Staff Engineer."
+    />
+    <title>Technical Skills | Yathin Kullachana Somaiah</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <!-- Hero Section -->
-    <div class="hero">
-      <div class="hero-content">
-        <h1>Welcome to My Skills Page</h1>
-        <p>Explore my technical expertise and professional capabilities.</p>
-      </div>
-    </div>
-    <h1>My Skills</h1>
+    <!-- Navbar -->
+    <header class="navbar-wrapper">
+      <div class="container navbar">
+        <a href="index.html" class="nav-brand">
+          <div class="nav-brand-logo">YS</div>
+          <div class="nav-brand-text">
+            Yathin K. Somaiah
+            <span>Senior Staff Engineer</span>
+          </div>
+        </a>
 
-    <div class="skills-section">
-      <h2>Languages</h2>
-      <div class="skills-list">
-        <div>
-          <img src="logos/java-seeklogo.svg" alt="Java" class="icon" />
-          <p>Java</p>
-        </div>
-        <div>
-          <img src="logos/python-svgrepo-com.svg" alt="Python" class="icon" />
-          <p>Python</p>
-        </div>
-        <div>
-          <img src="logos/sql-svgrepo-com.svg" alt="SQL" class="icon" />
-          <p>SQL</p>
-        </div>
-        <div>
-          <img
-            src="logos/bash02-svgrepo-com.svg"
-            alt="Shell Scripting"
-            class="icon"
-          />
-          <p>Shell Scripting</p>
-        </div>
-        <div>
-          <img src="logos/lua-svgrepo-com.svg" alt="Lua" class="icon" />
-          <p>Lua</p>
-        </div>
-        <div>
-          <img
-            src="logos/javascript-svgrepo-com.svg"
-            alt="JavaScript"
-            class="icon"
-          />
-          <p>JavaScript</p>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="experience.html">Employment</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html" class="active">Skills</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="docs/Yathin_Kullachana_Somaiah_Resume_EN.pdf" target="_blank" class="resume-action-btn">
+            Resume (PDF)
+          </a>
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+            <span id="theme-toggle-icon">☀️</span>
+          </button>
+          <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Toggle menu">☰</button>
         </div>
       </div>
-    </div>
+    </header>
 
-    <div class="skills-section">
-      <h2>Technologies</h2>
-      <div class="skills-list">
-        <div>
-          <img
-            src="logos/spring-svgrepo-com.svg"
-            alt="Spring Boot"
-            class="icon"
-          />
-          <p>Spring Boot</p>
+    <main class="container" style="padding-top: 40px; padding-bottom: 60px;">
+      <div class="section-header" style="text-align: left; max-width: 100%;">
+        <span class="section-eyebrow">Technical Mastery</span>
+        <h1 class="section-title">Skills & Architecture Matrix</h1>
+        <p class="section-desc">
+          Structured inventory of core languages, enterprise backend frameworks, distributed streaming tools, and DevOps infrastructure.
+        </p>
+      </div>
+
+      <!-- Real-Time Search Bar -->
+      <div class="skills-search-wrapper" style="margin-left: 0; margin-bottom: 36px;">
+        <span class="skills-search-icon">🔍</span>
+        <input
+          type="text"
+          id="skills-search"
+          class="skills-search-input"
+          placeholder="Filter skills (e.g. Kafka, Java, Docker, Spring, AWS, Postgres)..."
+          aria-label="Filter skills"
+        />
+      </div>
+
+      <div class="skills-categories-grid">
+        <!-- 1. Languages -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <span class="skill-category-icon">💻</span>
+            <h3 class="skill-category-title">Languages & Runtimes</h3>
+          </div>
+          <div class="skill-items-wrap">
+            <span class="skill-item-chip">
+              <img src="logos/java-seeklogo.svg" alt="Java" class="chip-logo" />
+              Java (8, 11, 17, 21 - Expert)
+            </span>
+            <span class="skill-item-chip">
+              <img src="logos/python-svgrepo-com.svg" alt="Python" class="chip-logo" />
+              Python (Data & Automation)
+            </span>
+            <span class="skill-item-chip">
+              <img src="logos/sql-svgrepo-com.svg" alt="SQL" class="chip-logo" />
+              SQL (Query Optimization)
+            </span>
+            <span class="skill-item-chip">
+              <img src="logos/bash02-svgrepo-com.svg" alt="Bash" class="chip-logo" />
+              Shell / Bash Scripting
+            </span>
+            <span class="skill-item-chip">
+              <img src="logos/javascript-svgrepo-com.svg" alt="JavaScript" class="chip-logo" />
+              JavaScript / TypeScript
+            </span>
+            <span class="skill-item-chip">
+              <img src="logos/lua-svgrepo-com.svg" alt="Lua" class="chip-logo" />
+              Lua (Gateway Extensions)
+            </span>
+            <span class="skill-item-chip">Kotlin & Go (Adopting)</span>
+          </div>
         </div>
-        <div>
-          <img
-            src="logos/apigee-api-platform-svgrepo-com.svg"
-            alt="Apigee"
-            class="icon"
-          />
-          <p>Apigee</p>
+
+        <!-- 2. Backend & Frameworks -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <span class="skill-category-icon">⚙️</span>
+            <h3 class="skill-category-title">Backend & Frameworks</h3>
+          </div>
+          <div class="skill-items-wrap">
+            <span class="skill-item-chip">
+              <img src="logos/spring-svgrepo-com.svg" alt="Spring" class="chip-logo" />
+              Spring Boot (2.x / 3.x)
+            </span>
+            <span class="skill-item-chip">Spring Data JPA / Hibernate</span>
+            <span class="skill-item-chip">Spring Security (OAuth2 / JWT)</span>
+            <span class="skill-item-chip">RESTful Web Services</span>
+            <span class="skill-item-chip">JAX-WS / SOAP Services</span>
+            <span class="skill-item-chip">GraphQL API Integration</span>
+            <span class="skill-item-chip">
+              <img src="logos/reactjs-svgrepo-com.svg" alt="React" class="chip-logo" />
+              ReactJS (Modern UI)
+            </span>
+            <span class="skill-item-chip">Node.js / Express</span>
+          </div>
         </div>
-        <div>
-          <img
-            src="logos/kong-svgrepo-com.svg"
-            alt="Kong Gateway"
-            class="icon"
-          />
-          <p>Kong Gateway</p>
+
+        <!-- 3. Distributed Architecture -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <span class="skill-category-icon">🏗️</span>
+            <h3 class="skill-category-title">Architecture & System Design</h3>
+          </div>
+          <div class="skill-items-wrap">
+            <span class="skill-item-chip">Distributed Systems Architecture</span>
+            <span class="skill-item-chip">Microservices Architecture</span>
+            <span class="skill-item-chip">Event-Driven Architecture (EDA)</span>
+            <span class="skill-item-chip">Domain-Driven Design (DDD)</span>
+            <span class="skill-item-chip">CQRS & Event Sourcing</span>
+            <span class="skill-item-chip">Distributed Locking (Redis/Redlock)</span>
+            <span class="skill-item-chip">High-Concurrency Multithreading</span>
+            <span class="skill-item-chip">Clean Code & Design Patterns</span>
+          </div>
         </div>
-        <div>
-          <img src="logos/aws-svgrepo-com.svg" alt="AWS" class="icon" />
-          <p>AWS</p>
+
+        <!-- 4. Streaming & Gateways -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <span class="skill-category-icon">🔄</span>
+            <h3 class="skill-category-title">Streaming, Queues & Gateways</h3>
+          </div>
+          <div class="skill-items-wrap">
+            <span class="skill-item-chip">
+              <img src="logos/kafka-svgrepo-com.svg" alt="Kafka" class="chip-logo" />
+              Apache Kafka (Idempotency, Partitions)
+            </span>
+            <span class="skill-item-chip">RabbitMQ</span>
+            <span class="skill-item-chip">IBM WebSphere MQ</span>
+            <span class="skill-item-chip">
+              <img src="logos/service-bus-queues-svgrepo-com.svg" alt="AWS SQS" class="chip-logo" />
+              AWS SNS / SQS
+            </span>
+            <span class="skill-item-chip">
+              <img src="logos/kong-svgrepo-com.svg" alt="Kong" class="chip-logo" />
+              Kong API Gateway
+            </span>
+            <span class="skill-item-chip">Apache APISIX Gateway</span>
+            <span class="skill-item-chip">
+              <img src="logos/apigee-api-platform-svgrepo-com.svg" alt="Apigee" class="chip-logo" />
+              Apigee Platform
+            </span>
+            <span class="skill-item-chip">Hazelcast In-Memory Grid</span>
+          </div>
         </div>
-        <div>
-          <img src="logos/gcp-svgrepo-com.svg" alt="GCP" class="icon" />
-          <p>GCP</p>
+
+        <!-- 5. Cloud & Containers -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <span class="skill-category-icon">☁️</span>
+            <h3 class="skill-category-title">Cloud, Containers & DevOps</h3>
+          </div>
+          <div class="skill-items-wrap">
+            <span class="skill-item-chip">
+              <img src="logos/aws-svgrepo-com.svg" alt="AWS" class="chip-logo" />
+              Amazon Web Services (AWS)
+            </span>
+            <span class="skill-item-chip">
+              <img src="logos/gcp-svgrepo-com.svg" alt="GCP" class="chip-logo" />
+              Google Cloud Platform (GCP)
+            </span>
+            <span class="skill-item-chip">Microsoft Azure</span>
+            <span class="skill-item-chip">
+              <img src="logos/docker-svgrepo-com.svg" alt="Docker" class="chip-logo" />
+              Docker & Podman
+            </span>
+            <span class="skill-item-chip">
+              <img src="logos/kubernetes-svgrepo-com.svg" alt="Kubernetes" class="chip-logo" />
+              Kubernetes (K8s) & Helm
+            </span>
+            <span class="skill-item-chip">Red Hat OpenShift</span>
+            <span class="skill-item-chip">
+              <img src="logos/github-142-svgrepo-com.svg" alt="GitHub" class="chip-logo" />
+              GitHub Actions & GitLab CI
+            </span>
+            <span class="skill-item-chip">Jenkins & Maven</span>
+          </div>
         </div>
-        <div>
-          <img
-            src="logos/kubernetes-svgrepo-com.svg"
-            alt="Kubernetes"
-            class="icon"
-          />
-          <p>Kubernetes</p>
-        </div>
-        <div>
-          <img src="logos/docker-svgrepo-com.svg" alt="Docker" class="icon" />
-          <p>Docker</p>
-        </div>
-        <div>
-          <img src="logos/mongo-svgrepo-com.svg" alt="MongoDB" class="icon" />
-          <p>MongoDB</p>
-        </div>
-        <div>
-          <img
-            src="logos/influxdb-svgrepo-com.svg"
-            alt="InfluxDB"
-            class="icon"
-          />
-          <p>InfluxDB</p>
-        </div>
-        <div>
-          <img
-            src="logos/postgresql-svgrepo-com.svg"
-            alt="Postgres"
-            class="icon"
-          />
-          <p>Postgres</p>
-        </div>
-        <div>
-          <img
-            src="logos/oracle-6-logo-svgrepo-com.svg"
-            alt="Oracle"
-            class="icon"
-          />
-          <p>Oracle</p>
-        </div>
-        <div>
-          <img src="logos/reactjs-svgrepo-com.svg" alt="ReactJS" class="icon" />
-          <p>ReactJS</p>
-        </div>
-        <div>
-          <img
-            src="logos/angular-svgrepo-com.svg"
-            alt="AngularJS"
-            class="icon"
-          />
-          <p>AngularJS</p>
+
+        <!-- 6. Databases & Observability -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <span class="skill-category-icon">📊</span>
+            <h3 class="skill-category-title">Databases & Observability</h3>
+          </div>
+          <div class="skill-items-wrap">
+            <span class="skill-item-chip">
+              <img src="logos/postgresql-svgrepo-com.svg" alt="Postgres" class="chip-logo" />
+              PostgreSQL
+            </span>
+            <span class="skill-item-chip">
+              <img src="logos/oracle-6-logo-svgrepo-com.svg" alt="Oracle" class="chip-logo" />
+              Oracle Database
+            </span>
+            <span class="skill-item-chip">
+              <img src="logos/mongo-svgrepo-com.svg" alt="MongoDB" class="chip-logo" />
+              MongoDB
+            </span>
+            <span class="skill-item-chip">Redis (Distributed Cache)</span>
+            <span class="skill-item-chip">
+              <img src="logos/influxdb-svgrepo-com.svg" alt="InfluxDB" class="chip-logo" />
+              InfluxDB (Metrics)
+            </span>
+            <span class="skill-item-chip">
+              <img src="logos/cucumber-svgrepo-com.svg" alt="Cucumber" class="chip-logo" />
+              Cucumber BDD & JUnit
+            </span>
+            <span class="skill-item-chip">Mockito & TDD</span>
+            <span class="skill-item-chip">
+              <img src="logos/sonarqube-svgrepo-com.svg" alt="SonarQube" class="chip-logo" />
+              SonarQube & BlackDuck
+            </span>
+            <span class="skill-item-chip">Prometheus & Grafana</span>
+            <span class="skill-item-chip">OpenTelemetry Distributed Tracing</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="skills-section">
-      <h2>Concepts</h2>
-      <div class="skills-list">
-        <div>
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/3063/3063825.png"
-            alt="Multithreading"
-            class="icon"
-          />
-          <p>Multithreading</p>
-        </div>
-        <div>
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/3039/3039383.png"
-            alt="DSA"
-            class="icon"
-          />
-          <p>DSA</p>
-        </div>
-        <div>
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/2103/2103880.png"
-            alt="NoSQL"
-            class="icon"
-          />
-          <p>NoSQL</p>
-        </div>
-        <div>
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png"
-            alt="CVS"
-            class="icon"
-          />
-          <p>CVS (SVN, GIT)</p>
-        </div>
-        <div>
-          <img
-            src="logos/sonarqube-svgrepo-com.svg"
-            alt="Clean Code (SonarQube)"
-            class="icon"
-          />
-          <p>Clean Code (SonarQube)</p>
-        </div>
-        <div>
-          <img
-            src="https://cdn.worldvectorlogo.com/logos/hibernate.svg"
-            alt="Hibernate"
-            class="icon"
-          />
-          <p>Hibernate</p>
-        </div>
-        <div>
-          <img
-            src="logos/server-path-svgrepo-com.svg"
-            alt="Server"
-            class="icon"
-          />
-          <p>
-            Application Server (WebSphere, Glassfish, Tomcat, WebLogic, Netty)
-          </p>
-        </div>
-        <div>
-          <img src="logos/queue-svgrepo-com.svg" alt="MQ" class="icon" />
-          <p>
-            Messaging Queues (IBM WS MQ, RabbitMQ, ActiveMQ, Fiorano MQ, AWS
-            SNS/SQS)
-          </p>
-        </div>
-        <div>
-          <img
-            src="logos/cucumber-svgrepo-com.svg"
-            alt="Testing"
-            class="icon"
-          />
-          <p>Testing Frameworks (JUnit, Cucumber, Mockito)</p>
-        </div>
+      <div class="subpage-nav-bar" style="margin-top: 40px;">
+        <a href="index.html" class="btn btn-secondary">← Return to Home</a>
+        <a href="experience.html" class="btn btn-primary">View Employment Insights →</a>
+        <a href="contact.html" class="btn btn-outline">Contact Yathin</a>
       </div>
-    </div>
-    <nav>
-      <a href="index.html">Return to Home Page</a>
-    </nav>
+    </main>
 
+    <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Yathin™. All rights reserved.</p>
+      <div class="container footer-inner">
+        <p>&copy; 2026 Yathin Kullachana Somaiah. All rights reserved.</p>
+      </div>
     </footer>
+
+    <script src="scripts/main.js"></script>
   </body>
 </html>

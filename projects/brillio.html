@@ -1,65 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Brillio Technologies Projects" />
-    <title>Brillio Technologies Projects</title>
+    <meta name="description" content="Brillio Technologies Case Studies - Yathin Kullachana Somaiah" />
+    <title>Brillio Case Studies | Yathin Kullachana Somaiah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
-    <!-- Header Section -->
-    <header>
-      <h1>Brillio Technologies Projects</h1>
-      <p>
-        Explore the innovative projects I contributed to at Brillio
-        Technologies, where I specialized in microservices architecture and
-        system modernization.
-      </p>
+    <!-- Navbar -->
+    <header class="navbar-wrapper">
+      <div class="container navbar">
+        <a href="../index.html" class="nav-brand">
+          <div class="nav-brand-logo">YS</div>
+          <div class="nav-brand-text">
+            Yathin K. Somaiah
+            <span>Senior Staff Engineer</span>
+          </div>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../experience.html">Employment</a></li>
+          <li><a href="../projects.html" class="active">Projects</a></li>
+          <li><a href="../skills.html">Skills</a></li>
+          <li><a href="../certifications.html">Certifications</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="../docs/Yathin_Kullachana_Somaiah_Resume_EN.pdf" target="_blank" class="resume-action-btn">
+            Resume (PDF)
+          </a>
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+            <span id="theme-toggle-icon">☀️</span>
+          </button>
+        </div>
+      </div>
     </header>
 
-    <!-- Hero Section -->
-    <div class="hero">
-      <div class="hero-content">
-        <h1>Brillio Technologies</h1>
-        <p>Driving digital transformation through cutting-edge solutions.</p>
+    <main class="container" style="padding-top: 40px; padding-bottom: 60px;">
+      <div class="section-header" style="text-align: left; max-width: 100%;">
+        <span class="section-eyebrow">Enterprise Case Studies</span>
+        <h1 class="section-title">Brillio Technologies Projects</h1>
+        <p class="section-desc">
+          Modernization and architectural decoupling of eBay's enterprise People Management platform.
+        </p>
       </div>
-    </div>
 
-    <!-- Project Details Section -->
-    <section>
-      <h2>People Management System Modernization</h2>
-      <h3>Tech Stack</h3>
-      <p>Java-8, Spring Boot, Hibernate, Microservices, Oracle</p>
-      <h3>Responsibilities</h3>
-      <ul>
-        <li>
-          Spearheaded architectural design for a suite of 15 interconnected
-          microservices to enhance Brillio’s internal People Management systems.
-        </li>
-        <li>
-          Implemented robust security measures and caching strategies to
-          optimize response times and bolster system security.
-        </li>
-        <li>
-          Orchestrated a seamless migration from a legacy PLSQL and J2EE stack
-          to a modern Spring Boot and Hibernate framework.
-        </li>
-      </ul>
-    </section>
+      <div class="experience-timeline">
+        <article class="experience-card">
+          <div class="card-header-flex">
+            <div>
+              <span class="project-category-badge">Decoupled Microservices Migration</span>
+              <h2 style="font-size: 1.5rem; margin-top: 6px;">eBay People Management System Modernization</h2>
+            </div>
+            <span class="period-badge">15 Microservices • 35% Latency Drop</span>
+          </div>
 
-    <!-- Navigation -->
-    <nav class="return-nav">
-      <a href="../index.html">Home</a>
-      <a href="../projects.html">Projects</a>
-      <a href="../experience.html">Experience</a>
-      <a href="../skills.html">Skills</a>
-      <a href="../contact.html">Contact</a>
-    </nav>
+          <div style="margin: 16px 0;">
+            <h4 style="font-size: 0.95rem; color: var(--accent-cyan); text-transform: uppercase;">Tech Stack</h4>
+            <p style="color: var(--text-primary); font-weight: 500;">
+              Java 8/11, Spring Boot, Hibernate, Oracle DB, PostgreSQL, Microservices, SonarQube, TDD
+            </p>
+          </div>
+
+          <h4 style="font-size: 1rem; margin-bottom: 8px; color: var(--text-primary);">Architectural Scope & Responsibilities</h4>
+          <ul class="key-achievements-list">
+            <li>Spearheaded the architectural design and migration for a suite of 15 interconnected microservices to modernize eBay's internal human capital systems.</li>
+            <li>Eliminated legacy PL/SQL stored procedures and replaced tightly coupled J2EE modules with maintainable, isolated Spring Boot microservices.</li>
+            <li>Optimized database schemas across Oracle and PostgreSQL, reducing latency by 35% under peak employee access periods.</li>
+            <li>Integrated automated code quality gates with SonarQube and enforced Test-Driven Development (TDD) best practices.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="subpage-nav-bar" style="margin-top: 40px;">
+        <a href="../experience/brillio.html" class="btn btn-secondary">← Brillio Experience Overview</a>
+        <a href="../projects.html" class="btn btn-primary">All Projects Showcase →</a>
+      </div>
+    </main>
 
     <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Yathin™. All rights reserved.</p>
+      <div class="container footer-inner">
+        <p>&copy; 2026 Yathin Kullachana Somaiah. All rights reserved.</p>
+      </div>
     </footer>
+
+    <script src="../scripts/main.js"></script>
   </body>
 </html>
