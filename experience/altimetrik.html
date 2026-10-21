@@ -1,51 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Altimetrik Experience" />
-    <title>Altimetrik Experience</title>
+    <meta name="description" content="Altimetrik Experience - Yathin Kullachana Somaiah" />
+    <title>Altimetrik Experience | Yathin Kullachana Somaiah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
-    <header>
-      <h1>Altimetrik India Private Limited</h1>
-      <p>
-        <strong
-          >Senior Staff Engineer - Product and Platform Engineering</strong
-        >
-        - Bengaluru
-      </p>
-      <p>March 2024 – December 2025</p>
+    <!-- Navbar -->
+    <header class="navbar-wrapper">
+      <div class="container navbar">
+        <a href="../index.html" class="nav-brand">
+          <div class="nav-brand-logo">YS</div>
+          <div class="nav-brand-text">
+            Yathin K. Somaiah
+            <span>Senior Staff Engineer</span>
+          </div>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../experience.html" class="active">Employment</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../skills.html">Skills</a></li>
+          <li><a href="../certifications.html">Certifications</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="../docs/Yathin_Kullachana_Somaiah_Resume_EN.pdf" target="_blank" class="resume-action-btn">
+            Resume (PDF)
+          </a>
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+            <span id="theme-toggle-icon">☀️</span>
+          </button>
+        </div>
+      </div>
     </header>
-    <section>
-      <h2>Responsibilities</h2>
-      <ul>
-        <li>
-          Enhanced code robustness by integrating advanced Spring Boot features.
-        </li>
-        <li>Achieved over 20% reductions in cloud expenditure across AWS.</li>
-        <li>
-          Optimized application performance to support 800+ TPS with minimal
-          cloud resource utilization.
-        </li>
-        <li>
-          Implemented enhanced features and resolved bugs in the user interface
-          using React frameworks.
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="../projects/altimetrik.html">View Altimetrik Projects</a>
-        </li>
-      </ul>
-    </section>
-    <nav>
-      <a href="../experience.html">Return to Experience</a>
-      <a href="../index.html">Return to Home</a>
-    </nav>
+
+    <main class="container" style="padding-top: 40px; padding-bottom: 60px;">
+      <article class="experience-card" style="margin-bottom: 30px;">
+        <div class="card-header-flex">
+          <div class="card-role-block">
+            <span class="section-eyebrow">Enterprise Experience</span>
+            <h1 style="font-size: 2rem; margin-top: 8px;">Altimetrik India Private Limited</h1>
+            <div class="company-meta" style="margin-top: 6px;">
+              <span class="company-name" style="font-size: 1.1rem;">Senior Staff Engineer — Product & Platform Engineering</span>
+              <span>•</span>
+              <span class="company-loc">📍 Bengaluru, India (Client: Citibank BSI)</span>
+            </div>
+          </div>
+          <span class="period-badge">March 2024 – December 2025</span>
+        </div>
+
+        <p class="card-summary-p" style="font-size: 1.05rem; margin-top: 14px;">
+          Spearheaded core backend platform services and distributed transaction streams for Citibank BSI (Payments & E-Commerce) and BHN enterprise architectures.
+        </p>
+
+        <h3 style="font-size: 1.25rem; margin: 24px 0 14px; color: var(--accent-cyan);">Key Responsibilities & Technical Achievements</h3>
+        <ul class="key-achievements-list">
+          <li>
+            <strong>High-Concurrency Event Streaming:</strong> Architected and operated distributed event-driven microservices for Citibank BSI using <strong>Apache Kafka</strong>, sustaining <strong>800+ TPS</strong> while enforcing distributed transaction patterns (idempotency, partitioning, delivery guarantees) to ensure financial data correctness.
+          </li>
+          <li>
+            <strong>20%+ Cloud Infrastructure Cost Savings:</strong> Containerized microservices and automated deployment on <strong>AWS (EC2, S3, SNS/SQS)</strong> and OpenShift, optimizing cloud allocation and reducing operational spend by over 20%.
+          </li>
+          <li>
+            <strong>Distributed Concurrency & Locking:</strong> Implemented distributed locks with Redis to prevent race conditions and ensure high-accuracy responses in multi-threaded microservice workloads.
+          </li>
+          <li>
+            <strong>Enterprise Repository Migration:</strong> Scripted and executed the automated migration of nearly <strong>150 repositories</strong> from BitBucket to GitHub, integrating automated CI/CD and security vulnerability scans via BlackDuck.
+          </li>
+          <li>
+            <strong>UI Enhancements:</strong> Contributed feature enhancements and resolved critical interface bugs utilizing modern React frameworks.
+          </li>
+        </ul>
+
+        <div style="margin: 30px 0;">
+          <h4 style="font-size: 1.05rem; margin-bottom: 12px; color: var(--text-primary);">Technology Stack</h4>
+          <div class="tech-tags-group">
+            <span class="tech-tag">Java 17</span>
+            <span class="tech-tag">Spring Boot 3.2</span>
+            <span class="tech-tag">Apache Kafka</span>
+            <span class="tech-tag">AWS</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Redis</span>
+            <span class="tech-tag">MultiThreading</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">ReactJS</span>
+            <span class="tech-tag">BlackDuck</span>
+          </div>
+        </div>
+
+        <div class="subpage-nav-bar" style="justify-content: flex-start; margin-top: 30px;">
+          <a href="../projects/altimetrik.html" class="btn btn-primary">View Altimetrik Projects & Case Studies →</a>
+          <a href="../experience.html" class="btn btn-secondary">← Back to Employment Timeline</a>
+        </div>
+      </article>
+    </main>
+
+    <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Yathin™. All rights reserved.</p>
+      <div class="container footer-inner">
+        <p>&copy; 2026 Yathin Kullachana Somaiah. All rights reserved.</p>
+      </div>
     </footer>
+
+    <script src="../scripts/main.js"></script>
   </body>
 </html>

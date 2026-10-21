@@ -1,80 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Attra Infotech Projects" />
-    <title>Attra Infotech Projects</title>
+    <meta name="description" content="Attra Infotech Case Studies - Yathin Kullachana Somaiah" />
+    <title>Attra Infotech Case Studies | Yathin Kullachana Somaiah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
-    <!-- Header Section -->
-    <header>
-      <h1>Attra Infotech Projects</h1>
-      <p>
-        Explore the impactful projects I contributed to at Attra Infotech, where
-        I specialized in enterprise application development and automation.
-      </p>
+    <!-- Navbar -->
+    <header class="navbar-wrapper">
+      <div class="container navbar">
+        <a href="../index.html" class="nav-brand">
+          <div class="nav-brand-logo">YS</div>
+          <div class="nav-brand-text">
+            Yathin K. Somaiah
+            <span>Senior Staff Engineer</span>
+          </div>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../experience.html">Employment</a></li>
+          <li><a href="../projects.html" class="active">Projects</a></li>
+          <li><a href="../skills.html">Skills</a></li>
+          <li><a href="../certifications.html">Certifications</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="../docs/Yathin_Kullachana_Somaiah_Resume_EN.pdf" target="_blank" class="resume-action-btn">
+            Resume (PDF)
+          </a>
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+            <span id="theme-toggle-icon">☀️</span>
+          </button>
+        </div>
+      </div>
     </header>
 
-    <!-- Hero Section -->
-    <div class="hero">
-      <div class="hero-content">
-        <h1>Attra Infotech</h1>
-        <p>Delivering innovative solutions for enterprise applications.</p>
+    <main class="container" style="padding-top: 40px; padding-bottom: 60px;">
+      <div class="section-header" style="text-align: left; max-width: 100%;">
+        <span class="section-eyebrow">Enterprise Case Studies</span>
+        <h1 class="section-title">Attra Infotech (GE Capital) Projects</h1>
+        <p class="section-desc">
+          Enterprise SOA WebServices, automated form-to-PDF generation, and batch ETL workflow orchestration for commercial finance systems.
+        </p>
       </div>
-    </div>
 
-    <!-- Project Details Section -->
-    <section>
-      <h2>GE Capital - Enterprise Application Development</h2>
-      <h3>Tech Stack</h3>
-      <p>Java-7, JAX-WS, IBM WebSphere, Oracle, Adobe LiveCycle</p>
-      <h3>Responsibilities</h3>
-      <ul>
-        <li>
-          Configured, deployed, and managed IBM WebSphere 8.5 client runtimes to
-          establish robust test environments.
-        </li>
-        <li>
-          Developed JAX-WS service binding producers and client implementations
-          from WSDL contracts, ensuring seamless multi-format WebService
-          responses.
-        </li>
-        <li>
-          Designed WebServices for dynamic form-to-PDF conversions using Adobe
-          LiveCycle ES2.
-        </li>
-      </ul>
+      <div class="experience-timeline">
+        <article class="experience-card">
+          <div class="card-header-flex">
+            <div>
+              <span class="project-category-badge">Enterprise SOA & Automation</span>
+              <h2 style="font-size: 1.5rem; margin-top: 6px;">GE Capital Financial Services & Integration</h2>
+            </div>
+            <span class="period-badge">WebSphere 8.5 • JAX-WS • Adobe LiveCycle</span>
+          </div>
 
-      <h2>Automation and Integration</h2>
-      <h3>Tech Stack</h3>
-      <p>Control-M, Informatica, FTP</p>
-      <h3>Responsibilities</h3>
-      <ul>
-        <li>
-          Streamlined automation of Informatica scheduled jobs and FTP file
-          transfers through Control-M integration.
-        </li>
-        <li>
-          Ensured seamless integration of enterprise systems for efficient data
-          processing and delivery.
-        </li>
-      </ul>
-    </section>
+          <div style="margin: 16px 0;">
+            <h4 style="font-size: 0.95rem; color: var(--accent-cyan); text-transform: uppercase;">Tech Stack</h4>
+            <p style="color: var(--text-primary); font-weight: 500;">
+              Java 7, JAX-WS (SOAP), IBM WebSphere 8.5, Adobe LiveCycle ES2, Control-M, Informatica, Oracle SQL
+            </p>
+          </div>
 
-    <!-- Navigation -->
-    <nav class="return-nav">
-      <a href="../index.html">Home</a>
-      <a href="../projects.html">Projects</a>
-      <a href="../experience.html">Experience</a>
-      <a href="../skills.html">Skills</a>
-      <a href="../contact.html">Contact</a>
-    </nav>
+          <h4 style="font-size: 1rem; margin-bottom: 8px; color: var(--text-primary);">Architectural Scope & Responsibilities</h4>
+          <ul class="key-achievements-list">
+            <li>Configured and maintained IBM WebSphere 8.5 application servers, creating JAX-WS service binding producers and consumers from WSDL contracts.</li>
+            <li>Designed and integrated dynamic document generation WebServices using Adobe LiveCycle ES2 for automated financing application forms.</li>
+            <li>Streamlined batch processing and file transfer automation through Control-M job scheduling and Informatica ETL pipelines.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="subpage-nav-bar" style="margin-top: 40px;">
+        <a href="../experience/attra.html" class="btn btn-secondary">← Attra Experience Overview</a>
+        <a href="../projects.html" class="btn btn-primary">All Projects Showcase →</a>
+      </div>
+    </main>
 
     <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Yathin™. All rights reserved.</p>
+      <div class="container footer-inner">
+        <p>&copy; 2026 Yathin Kullachana Somaiah. All rights reserved.</p>
+      </div>
     </footer>
+
+    <script src="../scripts/main.js"></script>
   </body>
 </html>

@@ -1,47 +1,1140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Personal Portfolio of Yathin" />
-    <title>Yathin's Portfolio</title>
+    <meta
+      name="description"
+      content="Yathin Kullachana Somaiah - Senior Staff Engineer & Platform Architect. 10+ years engineering high-throughput distributed microservices, JVM & Spring Boot platforms, Kafka event streaming, and cloud architectures."
+    />
+    <meta name="keywords" content="Yathin Kullachana Somaiah, Senior Staff Engineer, Lead Backend Engineer, Java 21, Spring Boot, Apache Kafka, Distributed Systems, Cloud Architecture, Germany Software Engineer" />
+    <meta name="author" content="Yathin Kullachana Somaiah" />
+    
+    <!-- OpenGraph Metadata -->
+    <meta property="og:title" content="Yathin Kullachana Somaiah | Senior Staff & Platform Software Engineer" />
+    <meta property="og:description" content="10+ years engineering high-throughput distributed systems, API platforms, and event-driven architectures." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/corporate_headshot.jpg" />
+
+    <title>Yathin Kullachana Somaiah | Senior Staff & Platform Engineer</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <!-- Header Section -->
-    <header>
-      <h1>Welcome to My Portfolio</h1>
-      <p>
-        As a Senior Staff Engineer, I specialize in building scalable
-        applications, optimizing system performance, and delivering innovative
-        solutions across diverse industries.
-      </p>
+    <!-- Sticky Glass Navigation -->
+    <header class="navbar-wrapper">
+      <div class="container navbar">
+        <a href="index.html" class="nav-brand">
+          <div class="nav-brand-logo">YS</div>
+          <div class="nav-brand-text">
+            Yathin K. Somaiah
+            <span>Senior Staff Engineer</span>
+          </div>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="active">About</a></li>
+          <li><a href="#experience">Employment</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a
+            href="docs/Yathin_Kullachana_Somaiah_Resume_EN.pdf"
+            target="_blank"
+            class="resume-action-btn"
+            title="Download PDF Resume"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Resume (PDF)
+          </a>
+
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+            <span id="theme-toggle-icon">☀️</span>
+          </button>
+
+          <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+            ☰
+          </button>
+        </div>
+      </div>
     </header>
 
-    <!-- Hero Section -->
-    <div class="hero">
-      <div class="hero-content">
-        <h1>Explore My Work</h1>
-        <p>
-          Dive into my portfolio to uncover innovative projects, refined skills,
-          and a career dedicated to excellence in software development.
-        </p>
+    <main>
+      <!-- Hero Section -->
+      <section id="about" class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-content-col">
+            <div class="status-pill">
+              <span class="status-indicator"></span>
+              Open to Opportunities • Senior Staff & Lead Roles • Germany / Remote
+            </div>
+
+            <h1 class="hero-title">
+              Architecting <span class="gradient-text">High-Throughput</span> Distributed Systems & Platforms
+            </h1>
+
+            <div class="hero-subtitle">
+              <span>Yathin Kullachana Somaiah</span>
+              <span class="sub-tag">10+ Years Experience</span>
+              <span class="sub-tag">JVM & Spring Specialist</span>
+            </div>
+
+            <p class="hero-bio">
+              Oracle-certified Senior Staff & Platform Engineer with over a decade of hands-on experience
+              designing resilient distributed architectures, high-concurrency microservices (1,000+ TPS),
+              and enterprise API gateways. Proven track record driving 20%+ cloud spend reduction,
+              zero-downtime database migrations, and mission-critical banking, derivatives trading, and SaaS platforms
+              across Germany and globally.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#experience" class="btn btn-primary">
+                Explore Employment Insights
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <a href="docs/Yathin_Kullachana_Somaiah_Resume_EN.pdf" target="_blank" class="btn btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                Resume (EN)
+              </a>
+
+              <a href="docs/Yathin_Kullachana_Somaiah_Lebenslauf_DE.pdf" target="_blank" class="btn btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                Lebenslauf (DE)
+              </a>
+
+              <a href="#contact" class="btn btn-outline">
+                Contact Me
+              </a>
+            </div>
+
+            <div class="hero-quick-meta">
+              <span>📍 Saarbrücken, Germany</span>
+              <span>⚡ Unrestricted German Work Permit</span>
+              <span>🌐 English (Fluent) • German (B1)</span>
+            </div>
+          </div>
+
+          <div class="hero-visual-card">
+            <div class="portrait-glow-ring">
+              <div class="portrait-image-wrapper">
+                <img
+                  src="images/corporate_headshot.jpg"
+                  alt="Yathin Kullachana Somaiah - Senior Staff Engineer"
+                  class="portrait-img"
+                />
+              </div>
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-top-left">
+              <div class="badge-icon">⚡</div>
+              <div>
+                <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase;">Scale</div>
+                <div>1,000+ TPS Systems</div>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-right">
+              <div class="badge-icon">🛡️</div>
+              <div>
+                <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase;">Cloud Impact</div>
+                <div>20%+ Cost Optimization</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Ribbon -->
+      <section class="stats-strip">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-num">10+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">1000+</div>
+              <div class="stat-label">TPS Concurrency</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">20%+</div>
+              <div class="stat-label">Cloud Cost Saved</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">25+</div>
+              <div class="stat-label">Production Services</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">6</div>
+              <div class="stat-label">Enterprise Clients</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Employment Insight Section -->
+      <section id="experience" class="section-wrapper">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">Career Journey</span>
+            <h2 class="section-title">Employment & Leadership Insights</h2>
+            <p class="section-desc">
+              A comprehensive chronicle of technical leadership, architectural transformations,
+              and measurable business outcomes across global fintech, SaaS platforms, and enterprise systems.
+            </p>
+          </div>
+
+          <div class="experience-timeline">
+            <!-- 1. Altimetrik -->
+            <article class="experience-card">
+              <div class="card-header-flex">
+                <div class="card-role-block">
+                  <h3>Senior Staff Engineer — Product & Platform Integration</h3>
+                  <div class="company-meta">
+                    <span class="company-name">Altimetrik India Private Limited</span>
+                    <span>•</span>
+                    <span class="company-loc">📍 Bengaluru, India (Client: Citibank BSI)</span>
+                  </div>
+                </div>
+                <span class="period-badge">Mar 2024 – Dec 2025</span>
+              </div>
+
+              <p class="card-summary-p">
+                Led the engineering and platform architecture of mission-critical banking and transactional services
+                for Citibank BSI (Payments & E-Commerce) and BHN enterprise platforms, driving domain-driven design,
+                distributed streaming, and AI-accelerated development practices.
+              </p>
+
+              <ul class="key-achievements-list">
+                <li>
+                  <strong>High-Throughput Concurrency:</strong> Architected and scaled event-driven microservices sustaining <strong>800+ TPS</strong> with minimal cloud resource overhead by enforcing distributed locks, Hazelcast caching, and multithreading optimization.
+                </li>
+                <li>
+                  <strong>Citibank BSI Payment Processing:</strong> Operated high-concurrency event-driven transaction streams utilizing <strong>Apache Kafka</strong>, implementing distributed transaction idempotency and delivery guarantees for rigorous financial auditability.
+                </li>
+                <li>
+                  <strong>Cloud Infrastructure Optimization:</strong> Engineered containerized deployments on <strong>AWS (EC2, S3, SNS/SQS)</strong> and OpenShift, optimizing cloud allocation and generating <strong>over 20% cloud cost reduction</strong>.
+                </li>
+                <li>
+                  <strong>Enterprise Repository Migration:</strong> Automated and scripted the complex migration of nearly <strong>150 repositories</strong> from BitBucket to GitHub with automated CI/CD and security vulnerability scanning via BlackDuck.
+                </li>
+                <li>
+                  <strong>AI-Assisted Engineering:</strong> Championed modern developer workflows using Claude Code and Cursor, accelerating delivery velocity while maintaining strict code craftsmanship standards.
+                </li>
+              </ul>
+
+              <div class="card-footer-tags">
+                <div class="tech-tags-group">
+                  <span class="tech-tag">Java 17</span>
+                  <span class="tech-tag">Spring Boot 3.2</span>
+                  <span class="tech-tag">Apache Kafka</span>
+                  <span class="tech-tag">AWS</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">Redis</span>
+                  <span class="tech-tag">Docker</span>
+                  <span class="tech-tag">OpenShift</span>
+                </div>
+                <a href="projects/altimetrik.html" class="card-link-btn">
+                  View Altimetrik Case Studies →
+                </a>
+              </div>
+            </article>
+
+            <!-- 2. APIwiz -->
+            <article class="experience-card">
+              <div class="card-header-flex">
+                <div class="card-role-block">
+                  <h3>Lead Platform & Backend Engineer</h3>
+                  <div class="company-meta">
+                    <span class="company-name">APIwiz (Itorix Software Pvt. Ltd.)</span>
+                    <span>•</span>
+                    <span class="company-loc">📍 Bengaluru, India</span>
+                  </div>
+                </div>
+                <span class="period-badge">Jun 2022 – Jan 2024</span>
+              </div>
+
+              <p class="card-summary-p">
+                Pioneered the core server-side architecture and production lifecycle for flagship enterprise SaaS modules
+                (API Compliance, Portfolio, Monitoring) from requirements discovery to scale using API Gateways and microservices.
+              </p>
+
+              <ul class="key-achievements-list">
+                <li>
+                  <strong>Flagship API Compliance Engine:</strong> Designed and deployed the flagship API Compliance SaaS product to enforce governance across multi-gateway enterprise environments.
+                </li>
+                <li>
+                  <strong>1,000+ TPS Database Tuning:</strong> Designed scalable relational and document schemas across <strong>PostgreSQL and MongoDB</strong>, executing zero-downtime database migrations under load and tuning queries to sustain 1,000+ TPS.
+                </li>
+                <li>
+                  <strong>Gateway & Rate Limiting Integration:</strong> Built high-performance API routing and rate-limiting modules using <strong>APISIX, Kong Gateway, and Hazelcast</strong>, achieving over <strong>20% cost reductions</strong> across AWS & GCP.
+                </li>
+                <li>
+                  <strong>Enterprise Security & Encryption:</strong> Fortified customer data security by architecting <strong>256-bit AES encryption</strong> and automated data masking protocols for transit and resting datasets.
+                </li>
+                <li>
+                  <strong>Telemetry & Orchestration:</strong> Implemented real-time telemetry with <strong>OpenTelemetry & InfluxDB</strong>, packaging services with Docker Compose and Kubernetes orchestration for rapid on-premise and cloud deployments.
+                </li>
+              </ul>
+
+              <div class="card-footer-tags">
+                <div class="tech-tags-group">
+                  <span class="tech-tag">Java 11</span>
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">Kong Gateway</span>
+                  <span class="tech-tag">APISIX</span>
+                  <span class="tech-tag">Kubernetes</span>
+                  <span class="tech-tag">Hazelcast</span>
+                  <span class="tech-tag">RabbitMQ</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                </div>
+                <a href="projects/apiwiz.html" class="card-link-btn">
+                  View APIwiz Case Studies →
+                </a>
+              </div>
+            </article>
+
+            <!-- 3. Brillio -->
+            <article class="experience-card">
+              <div class="card-header-flex">
+                <div class="card-role-block">
+                  <h3>Senior Technical Specialist — Backend Lead</h3>
+                  <div class="company-meta">
+                    <span class="company-name">Brillio Technologies</span>
+                    <span>•</span>
+                    <span class="company-loc">📍 Bengaluru, India (Contractor at eBay)</span>
+                  </div>
+                </div>
+                <span class="period-badge">Aug 2021 – May 2022</span>
+              </div>
+
+              <p class="card-summary-p">
+                Spearheaded the technical modernization of eBay's internal enterprise People Management platform,
+                migrating legacy monoliths to a decoupled, high-resilience microservices architecture.
+              </p>
+
+              <ul class="key-achievements-list">
+                <li>
+                  <strong>15-Microservices Modernization:</strong> Led architectural redesign from a monolithic legacy PL/SQL and J2EE stack to 15 interconnected Spring Boot and Hibernate microservices.
+                </li>
+                <li>
+                  <strong>35% Query Latency Reduction:</strong> Restructured relational schemas and indices across Oracle and PostgreSQL, dramatically boosting response times under heavy concurrent employee traffic.
+                </li>
+                <li>
+                  <strong>Quality Gates & Code Craftsmanship:</strong> Enforced rigorous SonarQube automated code quality gates and led technical code reviews, lifting test coverage through TDD practices.
+                </li>
+              </ul>
+
+              <div class="card-footer-tags">
+                <div class="tech-tags-group">
+                  <span class="tech-tag">Java 8/11</span>
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">Hibernate</span>
+                  <span class="tech-tag">Oracle DB</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">SonarQube</span>
+                  <span class="tech-tag">Microservices</span>
+                </div>
+                <a href="projects/brillio.html" class="card-link-btn">
+                  View Brillio Case Studies →
+                </a>
+              </div>
+            </article>
+
+            <!-- 4. IG Infotech -->
+            <article class="experience-card">
+              <div class="card-header-flex">
+                <div class="card-role-block">
+                  <h3>Senior Backend Developer — Fintech & Onboarding</h3>
+                  <div class="company-meta">
+                    <span class="company-name">IG Infotech (Derivatives Trading Broker)</span>
+                    <span>•</span>
+                    <span class="company-loc">📍 Bengaluru, India</span>
+                  </div>
+                </div>
+                <span class="period-badge">Dec 2019 – Aug 2021</span>
+              </div>
+
+              <p class="card-summary-p">
+                Engineered secure financial onboarding, identity verification (KYC), and regulatory compliance modules
+                for a premier global derivatives trading brokerage serving millions of international active traders.
+              </p>
+
+              <ul class="key-achievements-list">
+                <li>
+                  <strong>Automated Customer Onboarding:</strong> Built robust Spring Boot authentication and onboarding pipelines with <strong>OAuth2, JWT</strong>, and regulatory client screening.
+                </li>
+                <li>
+                  <strong>Operational Stability for 25+ Applications:</strong> Maintained and enhanced 25 critical low-latency trading infrastructure services, guaranteeing high uptime during volatile market sessions.
+                </li>
+                <li>
+                  <strong>Defect Reduction via BDD:</strong> Formulated comprehensive Functional and Acceptance test suites with <strong>Cucumber & JUnit</strong>, curbing post-release production regressions by <strong>30%</strong>.
+                </li>
+              </ul>
+
+              <div class="card-footer-tags">
+                <div class="tech-tags-group">
+                  <span class="tech-tag">Java 11</span>
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">Spring Security</span>
+                  <span class="tech-tag">OAuth2</span>
+                  <span class="tech-tag">Cucumber BDD</span>
+                  <span class="tech-tag">Oracle SQL</span>
+                  <span class="tech-tag">Multithreading</span>
+                </div>
+                <a href="projects/iginfotech.html" class="card-link-btn">
+                  View IG Infotech Case Studies →
+                </a>
+              </div>
+            </article>
+
+            <!-- 5. NSC Global -->
+            <article class="experience-card">
+              <div class="card-header-flex">
+                <div class="card-role-block">
+                  <h3>Senior Software Engineer — Backend & Messaging</h3>
+                  <div class="company-meta">
+                    <span class="company-name">NSC Global</span>
+                    <span>•</span>
+                    <span class="company-loc">📍 Bengaluru, India (Contracted to AT&T)</span>
+                  </div>
+                </div>
+                <span class="period-badge">Feb 2017 – Dec 2019</span>
+              </div>
+
+              <p class="card-summary-p">
+                Architected and deployed distributed network system model microservices and messaging middleware
+                for AT&T's telecommunications infrastructure and enterprise business systems.
+              </p>
+
+              <ul class="key-achievements-list">
+                <li>
+                  <strong>Asynchronous Messaging Architecture:</strong> Integrated RabbitMQ and IBM WebSphere MQ objects (queues, topics, request/reply) to decouple data feeds across 27 high-load applications.
+                </li>
+                <li>
+                  <strong>Performance & Microservices Transition:</strong> Upgraded legacy systems to Spring Boot microservices with JDK8 concurrency, significantly reducing downstream network model computation times.
+                </li>
+                <li>
+                  <strong>Production Support & Uptime:</strong> Managed mission-critical client runtimes supporting millions of enterprise telecom users across multiple US regions.
+                </li>
+              </ul>
+
+              <div class="card-footer-tags">
+                <div class="tech-tags-group">
+                  <span class="tech-tag">Java 8</span>
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">RabbitMQ</span>
+                  <span class="tech-tag">IBM WebSphere MQ</span>
+                  <span class="tech-tag">Jenkins CI/CD</span>
+                  <span class="tech-tag">Linux</span>
+                </div>
+                <a href="projects/nscglobal.html" class="card-link-btn">
+                  View NSC Global Case Studies →
+                </a>
+              </div>
+            </article>
+
+            <!-- 6. Attra Infotech -->
+            <article class="experience-card">
+              <div class="card-header-flex">
+                <div class="card-role-block">
+                  <h3>Senior Software Engineer — Enterprise Integration</h3>
+                  <div class="company-meta">
+                    <span class="company-name">Attra Infotech Pvt. Ltd.</span>
+                    <span>•</span>
+                    <span class="company-loc">📍 Bengaluru, India (Client: GE Capital)</span>
+                  </div>
+                </div>
+                <span class="period-badge">Oct 2013 – Feb 2017</span>
+              </div>
+
+              <p class="card-summary-p">
+                Developed enterprise web services, financial document automation, and scheduled ETL data workflows
+                for GE Capital's commercial financing and banking solutions.
+              </p>
+
+              <ul class="key-achievements-list">
+                <li>
+                  <strong>JAX-WS WebServices Engineering:</strong> Built contract-first WSDL service producers and consumers on <strong>IBM WebSphere 8.5</strong> supporting standardized multi-format requests.
+                </li>
+                <li>
+                  <strong>Automated Document Rendering:</strong> Designed dynamic form-to-PDF conversion engines leveraging Adobe LiveCycle ES2 for commercial financing approval paperwork.
+                </li>
+                <li>
+                  <strong>Workflow Orchestration:</strong> Streamlined enterprise batch workflows and FTP data transfers through Control-M integration with Informatica scheduled jobs.
+                </li>
+              </ul>
+
+              <div class="card-footer-tags">
+                <div class="tech-tags-group">
+                  <span class="tech-tag">Java 7</span>
+                  <span class="tech-tag">JAX-WS (SOAP)</span>
+                  <span class="tech-tag">IBM WebSphere 8.5</span>
+                  <span class="tech-tag">Adobe LiveCycle</span>
+                  <span class="tech-tag">Control-M</span>
+                  <span class="tech-tag">Oracle SQL</span>
+                </div>
+                <a href="projects/attra.html" class="card-link-btn">
+                  View Attra Case Studies →
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects Section -->
+      <section id="projects" class="section-wrapper" style="background: var(--bg-secondary);">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">Portfolio Work</span>
+            <h2 class="section-title">Featured Engineering Projects</h2>
+            <p class="section-desc">
+              Deep dives into architecture decisions, system performance optimizations, and cloud implementations.
+            </p>
+          </div>
+
+          <!-- Category Filter Tabs -->
+          <div class="filter-tabs-wrapper">
+            <button class="filter-tab-btn active" data-filter="all">All Projects</button>
+            <button class="filter-tab-btn" data-filter="streaming">High TPS & Kafka</button>
+            <button class="filter-tab-btn" data-filter="platform">API Platforms & Gateways</button>
+            <button class="filter-tab-btn" data-filter="modernization">Enterprise Modernization</button>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1: Citibank BSI -->
+            <div class="project-card" data-category="streaming">
+              <span class="project-category-badge">FinTech & Event Streaming</span>
+              <h3 class="project-card-title">Citibank BSI Payment & Transaction Pipeline</h3>
+              <p class="project-card-desc">
+                Architected high-throughput event-driven microservices for Citibank BSI handling digital payments
+                and e-commerce settlements. Leveraged Apache Kafka partition strategies, message idempotency,
+                and distributed locking to guarantee 100% financial transaction accuracy.
+              </p>
+              <div class="project-metric-highlight">
+                ⚡ 800+ TPS Sustained Concurrency • Zero Transaction Loss
+              </div>
+              <div class="tech-tags-group">
+                <span class="tech-tag">Java 17</span>
+                <span class="tech-tag">Spring Boot 3.2</span>
+                <span class="tech-tag">Apache Kafka</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">AWS</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+            </div>
+
+            <!-- Project 2: API Compliance Engine -->
+            <div class="project-card" data-category="platform">
+              <span class="project-category-badge">Platform Engineering</span>
+              <h3 class="project-card-title">Flagship API Compliance SaaS Module</h3>
+              <p class="project-card-desc">
+                Conceived and engineered the core API Compliance platform at APIwiz. Integrated Kong and APISIX gateways
+                with Hazelcast distributed cache to inspect API traffic, evaluate contract governance rules,
+                and prevent non-compliant API schema deployments in real time.
+              </p>
+              <div class="project-metric-highlight">
+                ⚡ 1,000+ TPS Evaluation Rate • 20% Cloud Cost Savings
+              </div>
+              <div class="tech-tags-group">
+                <span class="tech-tag">Kong Gateway</span>
+                <span class="tech-tag">APISIX</span>
+                <span class="tech-tag">Hazelcast</span>
+                <span class="tech-tag">Kubernetes</span>
+                <span class="tech-tag">RabbitMQ</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+            </div>
+
+            <!-- Project 3: eBay Modernization -->
+            <div class="project-card" data-category="modernization">
+              <span class="project-category-badge">Cloud Migration</span>
+              <h3 class="project-card-title">eBay Enterprise People Management Modernization</h3>
+              <p class="project-card-desc">
+                Spearheaded the complete decoupled migration of eBay's legacy human capital systems. Replaced dense
+                PL/SQL stored procedures and monolithic J2EE with 15 lightweight, decoupled Spring Boot microservices
+                backed by containerized infrastructure.
+              </p>
+              <div class="project-metric-highlight">
+                ⚡ 35% Database Query Latency Reduction across Oracle & Postgres
+              </div>
+              <div class="tech-tags-group">
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">Hibernate</span>
+                <span class="tech-tag">Oracle DB</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Microservices</span>
+                <span class="tech-tag">TDD</span>
+              </div>
+            </div>
+
+            <!-- Project 4: IG Trading Onboarding -->
+            <div class="project-card" data-category="platform">
+              <span class="project-category-badge">FinTech & Security</span>
+              <h3 class="project-card-title">IG Trading Client Onboarding & KYC Engine</h3>
+              <p class="project-card-desc">
+                Developed the mission-critical onboarding and regulatory compliance service for derivatives trading broker IG.
+                Implemented OAuth2 authentication, secure customer registration pipelines, and strict automated PII data masking.
+              </p>
+              <div class="project-metric-highlight">
+                ⚡ 30% Defect Reduction through Automated Cucumber BDD Test Suites
+              </div>
+              <div class="tech-tags-group">
+                <span class="tech-tag">Java 11</span>
+                <span class="tech-tag">Spring Security</span>
+                <span class="tech-tag">OAuth2 / JWT</span>
+                <span class="tech-tag">Cucumber BDD</span>
+                <span class="tech-tag">Oracle</span>
+              </div>
+            </div>
+
+            <!-- Project 5: BHN Bloom High-Throughput Engine -->
+            <div class="project-card" data-category="streaming">
+              <span class="project-category-badge">Distributed Systems</span>
+              <h3 class="project-card-title">BHN Bloom Distributed Transaction Engine</h3>
+              <p class="project-card-desc">
+                Engineered distributed locking mechanisms using Redis and multi-threaded JVM routines to ensure high-accuracy,
+                race-condition-free responses in high-throughput voucher and payment transactions under minimal AWS cloud resource consumption.
+              </p>
+              <div class="project-metric-highlight">
+                ⚡ 800+ TPS with Low Cloud Utilization • Multi-Threaded Stability
+              </div>
+              <div class="tech-tags-group">
+                <span class="tech-tag">Java 17</span>
+                <span class="tech-tag">Spring Boot 3</span>
+                <span class="tech-tag">Redis Distributed Locks</span>
+                <span class="tech-tag">MultiThreading</span>
+                <span class="tech-tag">AWS</span>
+              </div>
+            </div>
+
+            <!-- Project 6: AT&T Network Systems -->
+            <div class="project-card" data-category="modernization">
+              <span class="project-category-badge">Enterprise Integration</span>
+              <h3 class="project-card-title">AT&T Network Systems Asynchronous Messaging</h3>
+              <p class="project-card-desc">
+                Designed asynchronous messaging pipelines combining RabbitMQ and IBM WebSphere MQ objects for AT&T telecom
+                network models. Streamlined automated CI/CD release pipelines using Jenkins and Linux runner environments.
+              </p>
+              <div class="project-metric-highlight">
+                ⚡ 27 Mission-Critical Telecommunication Services Supported
+              </div>
+              <div class="tech-tags-group">
+                <span class="tech-tag">Java 8</span>
+                <span class="tech-tag">RabbitMQ</span>
+                <span class="tech-tag">IBM MQ</span>
+                <span class="tech-tag">Jenkins CI/CD</span>
+                <span class="tech-tag">Linux</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical Skills Matrix -->
+      <section id="skills" class="section-wrapper">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">Core Competencies</span>
+            <h2 class="section-title">Technical Skills & Architecture Matrix</h2>
+            <p class="section-desc">
+              Comprehensive overview of languages, frameworks, cloud infrastructure, and architectural methodologies.
+            </p>
+          </div>
+
+          <!-- Real-Time Search Bar -->
+          <div class="skills-search-wrapper">
+            <span class="skills-search-icon">🔍</span>
+            <input
+              type="text"
+              id="skills-search"
+              class="skills-search-input"
+              placeholder="Search technologies (e.g. Kafka, Java, AWS, Postgres, Spring)..."
+              aria-label="Search skills"
+            />
+          </div>
+
+          <div class="skills-categories-grid">
+            <!-- Category 1: Languages -->
+            <div class="skill-category-card">
+              <div class="skill-category-header">
+                <span class="skill-category-icon">💻</span>
+                <h3 class="skill-category-title">Languages & Runtimes</h3>
+              </div>
+              <div class="skill-items-wrap">
+                <span class="skill-item-chip">
+                  <img src="logos/java-seeklogo.svg" alt="Java" class="chip-logo" />
+                  Java (8, 11, 17, 21 - Expert)
+                </span>
+                <span class="skill-item-chip">
+                  <img src="logos/python-svgrepo-com.svg" alt="Python" class="chip-logo" />
+                  Python
+                </span>
+                <span class="skill-item-chip">
+                  <img src="logos/sql-svgrepo-com.svg" alt="SQL" class="chip-logo" />
+                  SQL (Complex Queries & Tuning)
+                </span>
+                <span class="skill-item-chip">
+                  <img src="logos/bash02-svgrepo-com.svg" alt="Bash" class="chip-logo" />
+                  Shell / Bash Scripting
+                </span>
+                <span class="skill-item-chip">
+                  <img src="logos/javascript-svgrepo-com.svg" alt="JavaScript" class="chip-logo" />
+                  JavaScript / TypeScript
+                </span>
+                <span class="skill-item-chip">
+                  <img src="logos/lua-svgrepo-com.svg" alt="Lua" class="chip-logo" />
+                  Lua (API Gateway Plugins)
+                </span>
+                <span class="skill-item-chip">Kotlin & Go (Adopting)</span>
+              </div>
+            </div>
+
+            <!-- Category 2: Backend & Frameworks -->
+            <div class="skill-category-card">
+              <div class="skill-category-header">
+                <span class="skill-category-icon">⚙️</span>
+                <h3 class="skill-category-title">Backend & Frameworks</h3>
+              </div>
+              <div class="skill-items-wrap">
+                <span class="skill-item-chip">
+                  <img src="logos/spring-svgrepo-com.svg" alt="Spring" class="chip-logo" />
+                  Spring Boot (2.x / 3.x)
+                </span>
+                <span class="skill-item-chip">Spring Data JPA</span>
+                <span class="skill-item-chip">Spring Security (OAuth2/JWT)</span>
+                <span class="skill-item-chip">Hibernate ORM</span>
+                <span class="skill-item-chip">RESTful APIs</span>
+                <span class="skill-item-chip">JAX-WS / SOAP WebServices</span>
+                <span class="skill-item-chip">GraphQL</span>
+                <span class="skill-item-chip">
+                  <img src="logos/reactjs-svgrepo-com.svg" alt="React" class="chip-logo" />
+                  ReactJS (Modern UI)
+                </span>
+              </div>
+            </div>
+
+            <!-- Category 3: Architecture & System Design -->
+            <div class="skill-category-card">
+              <div class="skill-category-header">
+                <span class="skill-category-icon">🏗️</span>
+                <h3 class="skill-category-title">Architecture & Patterns</h3>
+              </div>
+              <div class="skill-items-wrap">
+                <span class="skill-item-chip">Distributed Systems Architecture</span>
+                <span class="skill-item-chip">Microservices Architecture</span>
+                <span class="skill-item-chip">Event-Driven Architecture (EDA)</span>
+                <span class="skill-item-chip">Domain-Driven Design (DDD)</span>
+                <span class="skill-item-chip">CQRS & Event Sourcing</span>
+                <span class="skill-item-chip">Distributed Locking (Redis/Redlock)</span>
+                <span class="skill-item-chip">High-Concurrency Multithreading</span>
+                <span class="skill-item-chip">Clean Code & SOLID</span>
+              </div>
+            </div>
+
+            <!-- Category 4: Streaming, Queues & Gateways -->
+            <div class="skill-category-card">
+              <div class="skill-category-header">
+                <span class="skill-category-icon">🔄</span>
+                <h3 class="skill-category-title">Streaming, Queues & Gateways</h3>
+              </div>
+              <div class="skill-items-wrap">
+                <span class="skill-item-chip">
+                  <img src="logos/kafka-svgrepo-com.svg" alt="Kafka" class="chip-logo" />
+                  Apache Kafka (Partitioning, Idempotency)
+                </span>
+                <span class="skill-item-chip">RabbitMQ</span>
+                <span class="skill-item-chip">IBM WebSphere MQ</span>
+                <span class="skill-item-chip">
+                  <img src="logos/service-bus-queues-svgrepo-com.svg" alt="AWS SQS" class="chip-logo" />
+                  AWS SNS / SQS
+                </span>
+                <span class="skill-item-chip">
+                  <img src="logos/kong-svgrepo-com.svg" alt="Kong" class="chip-logo" />
+                  Kong API Gateway
+                </span>
+                <span class="skill-item-chip">Apache APISIX Gateway</span>
+                <span class="skill-item-chip">
+                  <img src="logos/apigee-api-platform-svgrepo-com.svg" alt="Apigee" class="chip-logo" />
+                  Apigee API Platform
+                </span>
+                <span class="skill-item-chip">Hazelcast In-Memory Grid</span>
+              </div>
+            </div>
+
+            <!-- Category 5: Cloud, Containers & DevOps -->
+            <div class="skill-category-card">
+              <div class="skill-category-header">
+                <span class="skill-category-icon">☁️</span>
+                <h3 class="skill-category-title">Cloud, Containers & CI/CD</h3>
+              </div>
+              <div class="skill-items-wrap">
+                <span class="skill-item-chip">
+                  <img src="logos/aws-svgrepo-com.svg" alt="AWS" class="chip-logo" />
+                  AWS (EC2, S3, RDS, SNS/SQS, IAM)
+                </span>
+                <span class="skill-item-chip">
+                  <img src="logos/gcp-svgrepo-com.svg" alt="GCP" class="chip-logo" />
+                  Google Cloud Platform (GCP)
+                </span>
+                <span class="skill-item-chip">Microsoft Azure</span>
+                <span class="skill-item-chip">
+                  <img src="logos/docker-svgrepo-com.svg" alt="Docker" class="chip-logo" />
+                  Docker & Podman
+                </span>
+                <span class="skill-item-chip">
+                  <img src="logos/kubernetes-svgrepo-com.svg" alt="Kubernetes" class="chip-logo" />
+                  Kubernetes (K8s) & Helm
+                </span>
+                <span class="skill-item-chip">Red Hat OpenShift</span>
+                <span class="skill-item-chip">
+                  <img src="logos/github-142-svgrepo-com.svg" alt="GitHub" class="chip-logo" />
+                  GitHub Actions & GitLab CI
+                </span>
+                <span class="skill-item-chip">Jenkins & Maven</span>
+              </div>
+            </div>
+
+            <!-- Category 6: Databases, Testing & Observability -->
+            <div class="skill-category-card">
+              <div class="skill-category-header">
+                <span class="skill-category-icon">📊</span>
+                <h3 class="skill-category-title">Databases, Testing & QA</h3>
+              </div>
+              <div class="skill-items-wrap">
+                <span class="skill-item-chip">
+                  <img src="logos/postgresql-svgrepo-com.svg" alt="Postgres" class="chip-logo" />
+                  PostgreSQL
+                </span>
+                <span class="skill-item-chip">
+                  <img src="logos/oracle-6-logo-svgrepo-com.svg" alt="Oracle" class="chip-logo" />
+                  Oracle Database
+                </span>
+                <span class="skill-item-chip">
+                  <img src="logos/mongo-svgrepo-com.svg" alt="MongoDB" class="chip-logo" />
+                  MongoDB (NoSQL)
+                </span>
+                <span class="skill-item-chip">Redis (Cache & Locks)</span>
+                <span class="skill-item-chip">
+                  <img src="logos/influxdb-svgrepo-com.svg" alt="InfluxDB" class="chip-logo" />
+                  InfluxDB (Time-Series)
+                </span>
+                <span class="skill-item-chip">
+                  <img src="logos/cucumber-svgrepo-com.svg" alt="Cucumber" class="chip-logo" />
+                  Cucumber BDD & JUnit
+                </span>
+                <span class="skill-item-chip">Mockito & TDD</span>
+                <span class="skill-item-chip">
+                  <img src="logos/sonarqube-svgrepo-com.svg" alt="SonarQube" class="chip-logo" />
+                  SonarQube & BlackDuck
+                </span>
+                <span class="skill-item-chip">OpenTelemetry, Prometheus & Grafana</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications & Education Section -->
+      <section id="certifications" class="section-wrapper" style="background: var(--bg-secondary);">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">Credentials</span>
+            <h2 class="section-title">Certifications & Academic Background</h2>
+            <p class="section-desc">
+              Verified industry credentials, technical specializations, and engineering education.
+            </p>
+          </div>
+
+          <div class="certifications-grid">
+            <!-- 1. Oracle OCAJP8 -->
+            <div class="cert-card">
+              <div>
+                <span class="cert-badge-tag">Official Certification</span>
+                <h3 class="cert-name">Oracle Certified Associate, Java SE 8 Programmer</h3>
+                <p class="cert-issuer">Oracle University • 2025</p>
+              </div>
+              <button
+                class="cert-view-btn"
+                onclick="openCertModal('certifications/oracle_java_certificate.jpg', 'Oracle Certified Associate, Java SE 8 Programmer')"
+              >
+                🔍 View Verified Certificate
+              </button>
+            </div>
+
+            <!-- 2. Generative AI Engineering Mastermind -->
+            <div class="cert-card">
+              <div>
+                <span class="cert-badge-tag">AI Engineering</span>
+                <h3 class="cert-name">Generative AI Engineering Mastermind</h3>
+                <p class="cert-issuer">Outskill • 2026</p>
+              </div>
+              <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 12px;">
+                Advanced agentic workflows, LLM orchestration, evaluation, and production serving.
+              </div>
+            </div>
+
+            <!-- 3. RAG Developer Certification -->
+            <div class="cert-card">
+              <div>
+                <span class="cert-badge-tag">AI Architecture</span>
+                <h3 class="cert-name">RAG Developer Certification</h3>
+                <p class="cert-issuer">CreateBytes Xperts (CBX) • 2026</p>
+              </div>
+              <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 12px;">
+                Retrieval-Augmented Generation, vector embeddings, chunking strategies, and semantic retrieval.
+              </div>
+            </div>
+
+            <!-- 4. Kafka Fundamentals -->
+            <div class="cert-card">
+              <div>
+                <span class="cert-badge-tag">Distributed Streaming</span>
+                <h3 class="cert-name">Kafka Fundamentals</h3>
+                <p class="cert-issuer">Coursera / Confluent • 2025</p>
+              </div>
+              <button
+                class="cert-view-btn"
+                onclick="openCertModal('certifications/kafka_fundamentals_certificate.jpg', 'Kafka Fundamentals')"
+              >
+                🔍 View Verified Certificate
+              </button>
+            </div>
+
+            <!-- 5. Modern JavaScript with ES6 -->
+            <div class="cert-card">
+              <div>
+                <span class="cert-badge-tag">Frontend & Async</span>
+                <h3 class="cert-name">Modern JavaScript with ES6</h3>
+                <p class="cert-issuer">Coursera • 2025</p>
+              </div>
+              <button
+                class="cert-view-btn"
+                onclick="openCertModal('certifications/javascript_es6_certificate.jpg', 'Modern JavaScript with ES6')"
+              >
+                🔍 View Verified Certificate
+              </button>
+            </div>
+
+            <!-- 6. ReactJS Bootcamp -->
+            <div class="cert-card">
+              <div>
+                <span class="cert-badge-tag">Full-Stack Bootcamp</span>
+                <h3 class="cert-name">JavaScript with ReactJS Bootcamp</h3>
+                <p class="cert-issuer">BIT Mesra • 2021</p>
+              </div>
+              <button
+                class="cert-view-btn"
+                onclick="openCertModal('certifications/js_react_bootcamp.jpg', 'JavaScript with ReactJS Bootcamp')"
+              >
+                🔍 View Verified Certificate
+              </button>
+            </div>
+
+            <!-- 7. Degree: BE ECE -->
+            <div class="cert-card" style="border-left: 4px solid var(--accent-primary);">
+              <div>
+                <span class="cert-badge-tag">Academic Degree</span>
+                <h3 class="cert-name">Bachelor of Engineering (B.E.)</h3>
+                <p class="cert-issuer">Electronics & Communication Engineering</p>
+              </div>
+              <p style="font-size: 0.88rem; color: var(--text-secondary);">
+                Visvesvaraya Technological University (VTU), Karnataka, India
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section-wrapper">
+        <div class="container">
+          <div class="contact-card-main">
+            <div class="contact-info-col">
+              <span class="section-eyebrow">Get In Touch</span>
+              <h3>Let’s Discuss Senior & Staff Engineering Opportunities</h3>
+              <p>
+                Whether you have an inquiry regarding distributed backend architecture, platform engineering,
+                or a senior/staff engineering opening in Germany or remote, I would be delighted to connect.
+              </p>
+
+              <div class="contact-channels-list">
+                <!-- Email -->
+                <div class="contact-channel-item">
+                  <div class="channel-icon">✉️</div>
+                  <div class="channel-details">
+                    <span class="channel-label">Email</span>
+                    <a href="mailto:yathin.ksomaiah@gmail.com" class="channel-val">yathin.ksomaiah@gmail.com</a>
+                  </div>
+                  <button class="copy-btn" data-copy="yathin.ksomaiah@gmail.com" title="Copy Email">
+                    📋
+                  </button>
+                </div>
+
+                <!-- Phone -->
+                <div class="contact-channel-item">
+                  <div class="channel-icon">📞</div>
+                  <div class="channel-details">
+                    <span class="channel-label">Phone</span>
+                    <a href="tel:+491778085964" class="channel-val">+49 177 8085964</a>
+                  </div>
+                  <button class="copy-btn" data-copy="+491778085964" title="Copy Phone Number">
+                    📋
+                  </button>
+                </div>
+
+                <!-- Location -->
+                <div class="contact-channel-item">
+                  <div class="channel-icon">📍</div>
+                  <div class="channel-details">
+                    <span class="channel-label">Location & Residency</span>
+                    <span class="channel-val">Saarbrücken, Germany (Unrestricted Work Permit)</span>
+                  </div>
+                </div>
+
+                <!-- Socials -->
+                <div class="contact-channel-item">
+                  <div class="channel-icon">🔗</div>
+                  <div class="channel-details">
+                    <span class="channel-label">Professional Profiles</span>
+                    <div style="display: flex; gap: 14px; margin-top: 4px;">
+                      <a href="https://www.linkedin.com/in/yathin-ks/" target="_blank" style="font-weight: 600;">
+                        LinkedIn Profile ↗
+                      </a>
+                      <span>•</span>
+                      <a href="https://github.com/yathin51" target="_blank" style="font-weight: 600;">
+                        GitHub ↗
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-actions-col">
+              <div class="resume-download-box">
+                <h4>Official Application Materials</h4>
+                <p>Download comprehensive, tailored resume versions ready for talent acquisition teams:</p>
+                <div class="resume-btn-stack">
+                  <a
+                    href="docs/Yathin_Kullachana_Somaiah_Resume_EN.pdf"
+                    target="_blank"
+                    class="btn btn-primary"
+                    download
+                  >
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                      <polyline points="7 10 12 15 17 10" />
+                      <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                    Download Resume (EN PDF)
+                  </a>
+
+                  <a
+                    href="docs/Yathin_Kullachana_Somaiah_Lebenslauf_DE.pdf"
+                    target="_blank"
+                    class="btn btn-secondary"
+                    download
+                  >
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                      <polyline points="7 10 12 15 17 10" />
+                      <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                    Download Lebenslauf (DE PDF)
+                  </a>
+
+                  <a
+                    href="mailto:yathin.ksomaiah@gmail.com?subject=Senior%20Staff%20Engineer%20Opportunity"
+                    class="btn btn-outline"
+                  >
+                    Send Direct Email ✉️
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Certificate Modal Lightbox -->
+    <div id="cert-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal-content-box">
+        <div class="modal-header">
+          <h3 id="modal-cert-title" class="modal-title">Certificate</h3>
+          <button id="modal-close-btn" class="modal-close-btn" aria-label="Close dialog">✕</button>
+        </div>
+        <div class="modal-body">
+          <img id="modal-cert-image" src="" alt="Certificate" class="modal-cert-img" />
+        </div>
       </div>
     </div>
 
-    <!-- Navigation -->
-    <nav>
-      <a href="about.html">About</a>
-      <a href="skills.html">Skills</a>
-      <a href="projects.html">Projects</a>
-      <a href="experience.html">Experience</a>
-      <a href="certifications.html">Certifications</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <!-- Toast Notification -->
+    <div id="toast-notice" class="toast-notice"></div>
 
     <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Yathin™. All rights reserved.</p>
+      <div class="container footer-inner">
+        <div class="footer-social-links">
+          <a href="https://www.linkedin.com/in/yathin-ks/" target="_blank" class="footer-social-btn" title="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+          <a href="https://github.com/yathin51" target="_blank" class="footer-social-btn" title="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="mailto:yathin.ksomaiah@gmail.com" class="footer-social-btn" title="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+          </a>
+        </div>
+        <p>&copy; 2026 Yathin Kullachana Somaiah. All rights reserved.</p>
+        <p style="font-size: 0.8rem; color: var(--text-muted);">
+          Built with semantic HTML5, modern vanilla CSS & JavaScript. Optimized for performance and ATS-aligned portfolio evaluation.
+        </p>
+      </div>
     </footer>
+
+    <!-- Interactive Scripts -->
+    <script src="scripts/main.js"></script>
   </body>
 </html>

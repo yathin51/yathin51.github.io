@@ -1,96 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Altimetrik Projects" />
-    <title>Altimetrik Projects</title>
+    <meta name="description" content="Altimetrik Case Studies - Yathin Kullachana Somaiah" />
+    <title>Altimetrik Case Studies | Yathin Kullachana Somaiah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
-    <!-- Header Section -->
-    <header>
-      <h1>Altimetrik Projects</h1>
-      <p>
-        Explore the impactful projects I contributed to at Altimetrik, where I
-        specialized in API development, cloud solutions, and system
-        optimization.
-      </p>
+    <!-- Navbar -->
+    <header class="navbar-wrapper">
+      <div class="container navbar">
+        <a href="../index.html" class="nav-brand">
+          <div class="nav-brand-logo">YS</div>
+          <div class="nav-brand-text">
+            Yathin K. Somaiah
+            <span>Senior Staff Engineer</span>
+          </div>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../experience.html">Employment</a></li>
+          <li><a href="../projects.html" class="active">Projects</a></li>
+          <li><a href="../skills.html">Skills</a></li>
+          <li><a href="../certifications.html">Certifications</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="../docs/Yathin_Kullachana_Somaiah_Resume_EN.pdf" target="_blank" class="resume-action-btn">
+            Resume (PDF)
+          </a>
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+            <span id="theme-toggle-icon">☀️</span>
+          </button>
+        </div>
+      </div>
     </header>
 
-    <!-- Hero Section -->
-    <div class="hero">
-      <div class="hero-content">
-        <h1>Altimetrik</h1>
-        <p>Empowering businesses with innovative technology solutions.</p>
+    <main class="container" style="padding-top: 40px; padding-bottom: 60px;">
+      <div class="section-header" style="text-align: left; max-width: 100%;">
+        <span class="section-eyebrow">Enterprise Case Studies</span>
+        <h1 class="section-title">Altimetrik Engineering Projects</h1>
+        <p class="section-desc">
+          Architectural solutions delivered for Citibank BSI and Blackhawk Network (BHN) focusing on high-throughput Kafka streaming, distributed locking, and AWS cloud optimization.
+        </p>
       </div>
-    </div>
 
-    <!-- Project Details Section -->
-    <section>
-      <h2>Citi bank-BSI</h2>
-      <h3>Tech Stack</h3>
-      <p>
-        Java-17, SpringBoot 3.2, MongoDB, MultiThreading, AWS, Docker, Redis
-      </p>
-      <h3>Responsibilities</h3>
-      <ul>
-        <li>Reduce Security vulnerabilities utilising tools like BlackDuck.</li>
-        <li>
-          Enhanced Functionalities and improved velocity of the application.
-        </li>
-        <li>
-          Script for the migration of nearly 150 repos from BitBucket to GitHub.
-        </li>
-      </ul>
+      <div class="experience-timeline">
+        <!-- Project 1: Citibank BSI -->
+        <article class="experience-card">
+          <div class="card-header-flex">
+            <div>
+              <span class="project-category-badge">FinTech & Payments</span>
+              <h2 style="font-size: 1.5rem; margin-top: 6px;">Citibank BSI Payment & Settlement Pipeline</h2>
+            </div>
+            <span class="period-badge">800+ TPS • Zero Data Loss</span>
+          </div>
 
-      <h2>BHN-Bloom</h2>
-      <h3>Tech Stack</h3>
-      <p>
-        Java-17, SpringBoot 3.2, MongoDB, MultiThreading, AWS, Docker, Redis
-      </p>
-      <h3>Responsibilities</h3>
-      <ul>
-        <li>
-          Enhanced the application to accommodate 800 TPS with low utilization
-          of cloud resources.
-        </li>
-        <li>
-          Implemented distributed locks to provide high-accuracy responses in
-          multithreaded applications.
-        </li>
-        <li>
-          Enhanced functionalities and brought stability to the application.
-        </li>
-      </ul>
+          <div style="margin: 16px 0;">
+            <h4 style="font-size: 0.95rem; color: var(--accent-cyan); text-transform: uppercase;">Tech Stack</h4>
+            <p style="color: var(--text-primary); font-weight: 500;">
+              Java 17, Spring Boot 3.2, Apache Kafka, MongoDB, Redis, MultiThreading, AWS, Docker, OpenShift, BlackDuck
+            </p>
+          </div>
 
-      <h2>BHN-Raptor</h2>
-      <h3>Tech Stack</h3>
-      <p>Java-17, SpringBoot 3.2, MultiThreading, AWS, Docker, ReactJS</p>
-      <h3>Responsibilities</h3>
-      <ul>
-        <li>
-          Improved application performance by more than 20% with low utilization
-          of cloud resources.
-        </li>
-        <li>
-          Enhanced functionalities and brought stability to the application.
-        </li>
-      </ul>
-    </section>
+          <h4 style="font-size: 1rem; margin-bottom: 8px; color: var(--text-primary);">Architectural Scope & Responsibilities</h4>
+          <ul class="key-achievements-list">
+            <li>Architected and scaled event-driven microservices for Citibank BSI handling high-concurrency payment settlements.</li>
+            <li>Enforced distributed message idempotency and delivery guarantees in Kafka partition consumers to guarantee strict financial auditability.</li>
+            <li>Conducted automated BlackDuck scanning and code remediation to eradicate high/critical security vulnerabilities.</li>
+            <li>Automated and scripted the migration of nearly 150 repositories from BitBucket to GitHub with modernized CI/CD workflows.</li>
+          </ul>
+        </article>
 
-    <!-- Navigation -->
-    <nav class="return-nav">
-      <a href="../index.html">Home</a>
-      <a href="../projects.html">Projects</a>
-      <a href="../experience.html">Experience</a>
-      <a href="../skills.html">Skills</a>
-      <a href="../contact.html">Contact</a>
-    </nav>
+        <!-- Project 2: BHN-Bloom -->
+        <article class="experience-card">
+          <div class="card-header-flex">
+            <div>
+              <span class="project-category-badge">High Concurrency & Distributed Systems</span>
+              <h2 style="font-size: 1.5rem; margin-top: 6px;">BHN-Bloom Distributed Concurrency Engine</h2>
+            </div>
+            <span class="period-badge">800+ TPS • Low Resource Utilization</span>
+          </div>
+
+          <div style="margin: 16px 0;">
+            <h4 style="font-size: 0.95rem; color: var(--accent-cyan); text-transform: uppercase;">Tech Stack</h4>
+            <p style="color: var(--text-primary); font-weight: 500;">
+              Java 17, Spring Boot 3.2, MongoDB, Redis (Distributed Locking), MultiThreading, AWS, Docker
+            </p>
+          </div>
+
+          <h4 style="font-size: 1rem; margin-bottom: 8px; color: var(--text-primary);">Architectural Scope & Responsibilities</h4>
+          <ul class="key-achievements-list">
+            <li>Enhanced application concurrency to comfortably accommodate 800+ TPS with minimal cloud resource overhead.</li>
+            <li>Engineered distributed locking mechanisms using Redis to prevent race conditions across parallel multi-threaded JVM instances.</li>
+            <li>Brought fault tolerance and response accuracy to high-volume card transaction workflows.</li>
+          </ul>
+        </article>
+
+        <!-- Project 3: BHN-Raptor -->
+        <article class="experience-card">
+          <div class="card-header-flex">
+            <div>
+              <span class="project-category-badge">Cloud Optimization & UI</span>
+              <h2 style="font-size: 1.5rem; margin-top: 6px;">BHN-Raptor Performance & Platform Modernization</h2>
+            </div>
+            <span class="period-badge">20%+ Latency Improvement</span>
+          </div>
+
+          <div style="margin: 16px 0;">
+            <h4 style="font-size: 0.95rem; color: var(--accent-cyan); text-transform: uppercase;">Tech Stack</h4>
+            <p style="color: var(--text-primary); font-weight: 500;">
+              Java 17, Spring Boot 3.2, MultiThreading, AWS, Docker, ReactJS
+            </p>
+          </div>
+
+          <h4 style="font-size: 1rem; margin-bottom: 8px; color: var(--text-primary);">Architectural Scope & Responsibilities</h4>
+          <ul class="key-achievements-list">
+            <li>Improved application performance by more than 20% while shrinking cloud memory footprints across AWS instances.</li>
+            <li>Implemented feature enhancements and UI bug fixes in client-facing management portals using React.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="subpage-nav-bar" style="margin-top: 40px;">
+        <a href="../experience/altimetrik.html" class="btn btn-secondary">← Altimetrik Experience Overview</a>
+        <a href="../projects.html" class="btn btn-primary">All Projects Showcase →</a>
+      </div>
+    </main>
 
     <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Yathin™. All rights reserved.</p>
+      <div class="container footer-inner">
+        <p>&copy; 2026 Yathin Kullachana Somaiah. All rights reserved.</p>
+      </div>
     </footer>
+
+    <script src="../scripts/main.js"></script>
   </body>
 </html>
