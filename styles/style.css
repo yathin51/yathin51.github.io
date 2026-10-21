@@ -1440,13 +1440,6 @@ footer {
   transform: translateY(-1px);
 }
 
-/* Brand Logo in Navbar */
-.brand-logo-img {
-  width: 34px;
-  height: 34px;
-  border-radius: 8px;
-  object-fit: contain;
-}
 
 /* Company Logos in Career Timeline */
 .company-header-logo-row {
