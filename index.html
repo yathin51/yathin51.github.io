@@ -33,11 +33,19 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
+    <!-- TechBackground Ambient Visuals -->
+    <div class="tech-bg-canvas-container" aria-hidden="true">
+      <div class="tech-bg-grid"></div>
+      <div class="tech-bg-blob tech-bg-blob-1"></div>
+      <div class="tech-bg-blob tech-bg-blob-2"></div>
+      <div class="tech-bg-blob tech-bg-blob-3"></div>
+    </div>
+
     <!-- Sticky Glass Navigation -->
     <header class="navbar-wrapper">
       <div class="container navbar">
         <a href="index.html" class="nav-brand">
-          <div class="nav-brand-logo">YS</div>
+          <img src="logos/YKS_LOGO_192.png" alt="YKS Logo" class="brand-logo-img" />
           <div class="nav-brand-text">
             Yathin K. Somaiah
             <span>Senior Staff Engineer</span>
@@ -45,15 +53,19 @@
         </a>
 
         <ul class="nav-links" id="nav-links">
-          <li><a href="#about" class="active">About</a></li>
-          <li><a href="#experience">Employment</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" class="active" data-i18n="nav.about">About</a></li>
+          <li><a href="#experience" data-i18n="nav.experience">Employment</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="#certifications" data-i18n="nav.certifications">Certifications</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
 
         <div class="nav-actions">
+          <button id="lang-toggle-btn" class="lang-toggle-btn" aria-label="Toggle Language" title="Switch Language">
+            🌐 <span class="lang-text">EN</span>
+          </button>
+
           <a
             href="docs/Yathin_Kullachana_Somaiah_Resume_EN.pdf"
             target="_blank"
@@ -65,7 +77,7 @@
               <polyline points="7 10 12 15 17 10" />
               <line x1="12" y1="15" x2="12" y2="3" />
             </svg>
-            Resume (PDF)
+            <span data-i18n="nav.resumeBtn">Resume (PDF)</span>
           </a>
 
           <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
@@ -86,7 +98,7 @@
           <div class="hero-content-col">
             <div class="status-pill">
               <span class="status-indicator"></span>
-              Open to Opportunities • Senior Staff & Lead Roles • Germany / Remote
+              <span data-i18n="hero.status">Open to Opportunities • Senior Staff & Lead Roles • Germany / Remote</span>
             </div>
 
             <h1 class="hero-title">
@@ -95,11 +107,11 @@
 
             <div class="hero-subtitle">
               <span>Yathin Kullachana Somaiah</span>
-              <span class="sub-tag">10+ Years Experience</span>
-              <span class="sub-tag">JVM & Spring Specialist</span>
+              <span class="sub-tag" data-i18n="hero.badgeExperience">10+ Years Experience</span>
+              <span class="sub-tag" data-i18n="hero.badgeSpecialist">JVM & Spring Specialist</span>
             </div>
 
-            <p class="hero-bio">
+            <p class="hero-bio" data-i18n="hero.summary">
               Oracle-certified Senior Staff & Platform Engineer with over a decade of hands-on experience
               designing resilient distributed architectures, high-concurrency microservices (1,000+ TPS),
               and enterprise API gateways. Proven track record driving 20%+ cloud spend reduction,
@@ -222,7 +234,12 @@
                 <div class="card-role-block">
                   <h3>Senior Staff Engineer — Product & Platform Integration</h3>
                   <div class="company-meta">
-                    <span class="company-name">Altimetrik India Private Limited</span>
+                    <div class="company-header-logo-row">
+                      <div class="company-logo-badge">
+                        <img src="logos/altimetrik.png" alt="Altimetrik Logo" />
+                      </div>
+                      <span class="company-name">Altimetrik India Private Limited</span>
+                    </div>
                     <span>•</span>
                     <span class="company-loc">📍 Bengaluru, India (Client: Citibank BSI)</span>
                   </div>
@@ -277,7 +294,12 @@
                 <div class="card-role-block">
                   <h3>Lead Platform & Backend Engineer</h3>
                   <div class="company-meta">
-                    <span class="company-name">APIwiz (Itorix Software Pvt. Ltd.)</span>
+                    <div class="company-header-logo-row">
+                      <div class="company-logo-badge">
+                        <img src="logos/apiwiz.svg" alt="APIwiz Logo" />
+                      </div>
+                      <span class="company-name">APIwiz (Itorix Software Pvt. Ltd.)</span>
+                    </div>
                     <span>•</span>
                     <span class="company-loc">📍 Bengaluru, India</span>
                   </div>
@@ -331,7 +353,12 @@
                 <div class="card-role-block">
                   <h3>Senior Technical Specialist — Backend Lead</h3>
                   <div class="company-meta">
-                    <span class="company-name">Brillio Technologies</span>
+                    <div class="company-header-logo-row">
+                      <div class="company-logo-badge">
+                        <img src="logos/Brillio_Secondary-Logo.svg" alt="Brillio Logo" />
+                      </div>
+                      <span class="company-name">Brillio Technologies</span>
+                    </div>
                     <span>•</span>
                     <span class="company-loc">📍 Bengaluru, India (Contractor at eBay)</span>
                   </div>
@@ -378,7 +405,12 @@
                 <div class="card-role-block">
                   <h3>Senior Backend Developer — Fintech & Onboarding</h3>
                   <div class="company-meta">
-                    <span class="company-name">IG Infotech (Derivatives Trading Broker)</span>
+                    <div class="company-header-logo-row">
+                      <div class="company-logo-badge">
+                        <img src="logos/group-IG.svg" alt="IG Group Logo" />
+                      </div>
+                      <span class="company-name">IG Infotech (Derivatives Trading Broker)</span>
+                    </div>
                     <span>•</span>
                     <span class="company-loc">📍 Bengaluru, India</span>
                   </div>
@@ -425,7 +457,12 @@
                 <div class="card-role-block">
                   <h3>Senior Software Engineer — Backend & Messaging</h3>
                   <div class="company-meta">
-                    <span class="company-name">NSC Global</span>
+                    <div class="company-header-logo-row">
+                      <div class="company-logo-badge">
+                        <img src="logos/nsc-global.svg" alt="NSC Global Logo" />
+                      </div>
+                      <span class="company-name">NSC Global</span>
+                    </div>
                     <span>•</span>
                     <span class="company-loc">📍 Bengaluru, India (Contracted to AT&T)</span>
                   </div>
@@ -471,7 +508,12 @@
                 <div class="card-role-block">
                   <h3>Senior Software Engineer — Enterprise Integration</h3>
                   <div class="company-meta">
-                    <span class="company-name">Attra Infotech Pvt. Ltd.</span>
+                    <div class="company-header-logo-row">
+                      <div class="company-logo-badge">
+                        <img src="logos/attra-partner-portal-logo.png" alt="Attra Infotech Logo" />
+                      </div>
+                      <span class="company-name">Attra Infotech Pvt. Ltd.</span>
+                    </div>
                     <span>•</span>
                     <span class="company-loc">📍 Bengaluru, India (Client: GE Capital)</span>
                   </div>
@@ -904,6 +946,12 @@
               <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 12px;">
                 Advanced agentic workflows, LLM orchestration, evaluation, and production serving.
               </div>
+              <button
+                class="cert-view-btn"
+                onclick="openCertModal('images/GenAI_Engineering_Mastermind_Certificate.webp', 'Generative AI Engineering Mastermind')"
+              >
+                🔍 View Verified Certificate
+              </button>
             </div>
 
             <!-- 3. RAG Developer Certification -->
@@ -916,6 +964,12 @@
               <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 12px;">
                 Retrieval-Augmented Generation, vector embeddings, chunking strategies, and semantic retrieval.
               </div>
+              <button
+                class="cert-view-btn"
+                onclick="openCertModal('images/CBX_RAG_certificate.webp', 'RAG Developer Certification - CBX')"
+              >
+                🔍 View Verified Certificate
+              </button>
             </div>
 
             <!-- 4. Kafka Fundamentals -->
@@ -999,18 +1053,6 @@
                     <a href="mailto:yathin.ksomaiah@gmail.com" class="channel-val">yathin.ksomaiah@gmail.com</a>
                   </div>
                   <button class="copy-btn" data-copy="yathin.ksomaiah@gmail.com" title="Copy Email">
-                    📋
-                  </button>
-                </div>
-
-                <!-- Phone -->
-                <div class="contact-channel-item">
-                  <div class="channel-icon">📞</div>
-                  <div class="channel-details">
-                    <span class="channel-label">Phone</span>
-                    <a href="tel:+491778085964" class="channel-val">+49 177 8085964</a>
-                  </div>
-                  <button class="copy-btn" data-copy="+491778085964" title="Copy Phone Number">
                     📋
                   </button>
                 </div>
@@ -1135,6 +1177,8 @@
     </footer>
 
     <!-- Interactive Scripts -->
+    <script src="scripts/i18n.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/chatbot.js"></script>
   </body>
 </html>

@@ -18,11 +18,19 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
+    <!-- TechBackground Ambient Visuals -->
+    <div class="tech-bg-canvas-container" aria-hidden="true">
+      <div class="tech-bg-grid"></div>
+      <div class="tech-bg-blob tech-bg-blob-1"></div>
+      <div class="tech-bg-blob tech-bg-blob-2"></div>
+      <div class="tech-bg-blob tech-bg-blob-3"></div>
+    </div>
+
     <!-- Navbar -->
     <header class="navbar-wrapper">
       <div class="container navbar">
         <a href="index.html" class="nav-brand">
-          <div class="nav-brand-logo">YS</div>
+          <img src="logos/YKS_LOGO_192.png" alt="YKS Logo" class="brand-logo-img" />
           <div class="nav-brand-text">
             Yathin K. Somaiah
             <span>Senior Staff Engineer</span>
@@ -31,17 +39,20 @@
 
         <ul class="nav-links" id="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="active">About</a></li>
-          <li><a href="experience.html">Employment</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="certifications.html">Certifications</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html" class="active" data-i18n="nav.about">About</a></li>
+          <li><a href="experience.html" data-i18n="nav.experience">Employment</a></li>
+          <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="certifications.html" data-i18n="nav.certifications">Certifications</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
 
         <div class="nav-actions">
+          <button id="lang-toggle-btn" class="lang-toggle-btn" aria-label="Toggle Language" title="Switch Language">
+            🌐 <span class="lang-text">EN</span>
+          </button>
           <a href="docs/Yathin_Kullachana_Somaiah_Resume_EN.pdf" target="_blank" class="resume-action-btn">
-            Resume (PDF)
+            <span data-i18n="nav.resumeBtn">Resume (PDF)</span>
           </a>
           <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
             <span id="theme-toggle-icon">☀️</span>
@@ -101,7 +112,7 @@
           <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 20px;">
             <h4 style="font-size: 1.05rem; margin-bottom: 12px; color: var(--text-primary);">Quick Facts</h4>
             <div style="display: flex; flex-direction: column; gap: 10px; font-size: 0.92rem; color: var(--text-secondary);">
-              <div><strong>📍 Location:</strong> Saarbrücken, Germany (66111)</div>
+              <div><strong>📍 Location:</strong> Saarbrücken, Germany</div>
               <div><strong>⚡ Work Authorization:</strong> Unrestricted German Work Permit</div>
               <div><strong>🎓 Education:</strong> B.E. in Electronics & Communication (VTU)</div>
               <div><strong>🌐 Languages:</strong> English (Fluent), German (B2)</div>
@@ -120,6 +131,8 @@
       </div>
     </footer>
 
+    <script src="scripts/i18n.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/chatbot.js"></script>
   </body>
 </html>
