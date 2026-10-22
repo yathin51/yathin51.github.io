@@ -38,7 +38,7 @@
         </a>
 
         <ul class="nav-links" id="nav-links">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
           <li><a href="about.html" data-i18n="nav.about">About</a></li>
           <li><a href="experience.html" data-i18n="nav.experience">Employment</a></li>
           <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
@@ -51,7 +51,7 @@
           <button id="lang-toggle-btn" class="lang-toggle-btn" aria-label="Toggle Language" title="Switch Language">
             🌐 <span class="lang-text">EN</span>
           </button>
-          <a href="docs/Yathin_Kullachana_Somaiah_Resume_EN.pdf" target="_blank" class="resume-action-btn">
+          <a href="docs/YathinKS_Resume_EN.pdf" target="_blank" class="resume-action-btn">
             <span data-i18n="nav.resumeBtn">Resume (PDF)</span>
           </a>
           <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
@@ -64,9 +64,9 @@
 
     <main class="container" style="padding-top: 40px; padding-bottom: 60px;">
       <div class="section-header" style="text-align: left; max-width: 100%;">
-        <span class="section-eyebrow">Accreditations</span>
-        <h1 class="section-title">Certifications & Education</h1>
-        <p class="section-desc">
+        <span class="section-eyebrow" data-i18n="certPage.eyebrow">Accreditations</span>
+        <h1 class="section-title" data-i18n="certPage.title">Certifications & Education</h1>
+        <p class="section-desc" data-i18n="certPage.subtitle">
           Official engineering certifications, specialized training in modern distributed architectures and AI engineering, and formal academic degree.
         </p>
       </div>
@@ -75,12 +75,13 @@
         <!-- 1. Oracle OCAJP8 -->
         <div class="cert-card">
           <div>
-            <span class="cert-badge-tag">Official Certification</span>
-            <h3 class="cert-name">Oracle Certified Associate, Java SE 8 Programmer</h3>
-            <p class="cert-issuer">Issued by Oracle University • 2025</p>
+            <span class="cert-badge-tag" data-i18n="certPage.card1Badge">Official Certification</span>
+            <h3 class="cert-name" data-i18n="certPage.card1Title">Oracle Certified Associate, Java SE 8 Programmer</h3>
+            <p class="cert-issuer" data-i18n="certPage.card1Issuer">Issued by Oracle University • 2025</p>
           </div>
           <button
             class="cert-view-btn"
+            data-i18n="certPage.viewBtn"
             onclick="openCertModal('certifications/oracle_java_certificate.jpg', 'Oracle Certified Associate, Java SE 8 Programmer')"
           >
             🔍 View Verified Certificate
@@ -90,15 +91,16 @@
         <!-- 2. Generative AI Engineering Mastermind -->
         <div class="cert-card">
           <div>
-            <span class="cert-badge-tag">AI Engineering</span>
-            <h3 class="cert-name">Generative AI Engineering Mastermind</h3>
-            <p class="cert-issuer">Issued by Outskill • 2026</p>
+            <span class="cert-badge-tag" data-i18n="certPage.card2Badge">AI Engineering</span>
+            <h3 class="cert-name" data-i18n="certPage.card2Title">Generative AI Engineering Mastermind</h3>
+            <p class="cert-issuer" data-i18n="certPage.card2Issuer">Issued by Outskill • 2026</p>
           </div>
-          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 14px;">
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 14px;" data-i18n="certPage.card2Desc">
             Advanced LLM agentic patterns, tool use, prompt caching, evaluation frameworks, and production inference.
           </p>
           <button
             class="cert-view-btn"
+            data-i18n="certPage.viewBtn"
             onclick="openCertModal('images/GenAI_Engineering_Mastermind_Certificate.webp', 'Generative AI Engineering Mastermind')"
           >
             🔍 View Verified Certificate
@@ -108,15 +110,16 @@
         <!-- 3. RAG Developer Certification -->
         <div class="cert-card">
           <div>
-            <span class="cert-badge-tag">AI Architecture</span>
-            <h3 class="cert-name">RAG Developer Certification</h3>
-            <p class="cert-issuer">Issued by CreateBytes Xperts (CBX) • 2026</p>
+            <span class="cert-badge-tag" data-i18n="certPage.card3Badge">AI Architecture</span>
+            <h3 class="cert-name" data-i18n="certPage.card3Title">RAG Developer Certification</h3>
+            <p class="cert-issuer" data-i18n="certPage.card3Issuer">Issued by CreateBytes Xperts (CBX) • 2026</p>
           </div>
-          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 14px;">
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 14px;" data-i18n="certPage.card3Desc">
             End-to-end Retrieval-Augmented Generation, vector embeddings, chunking strategies, and hybrid semantic search.
           </p>
           <button
             class="cert-view-btn"
+            data-i18n="certPage.viewBtn"
             onclick="openCertModal('images/CBX_RAG_certificate.webp', 'RAG Developer Certification - CBX')"
           >
             🔍 View Verified Certificate
@@ -126,12 +129,13 @@
         <!-- 4. Kafka Fundamentals -->
         <div class="cert-card">
           <div>
-            <span class="cert-badge-tag">Distributed Streaming</span>
-            <h3 class="cert-name">Kafka Fundamentals</h3>
-            <p class="cert-issuer">Issued by Coursera / Confluent • 2025</p>
+            <span class="cert-badge-tag" data-i18n="certPage.card4Badge">Distributed Streaming</span>
+            <h3 class="cert-name" data-i18n="certPage.card4Title">Kafka Fundamentals</h3>
+            <p class="cert-issuer" data-i18n="certPage.card4Issuer">Issued by Coursera / Confluent • 2025</p>
           </div>
           <button
             class="cert-view-btn"
+            data-i18n="certPage.viewBtn"
             onclick="openCertModal('certifications/kafka_fundamentals_certificate.jpg', 'Kafka Fundamentals')"
           >
             🔍 View Verified Certificate
@@ -141,12 +145,13 @@
         <!-- 5. Modern JavaScript with ES6 -->
         <div class="cert-card">
           <div>
-            <span class="cert-badge-tag">Frontend & Async</span>
-            <h3 class="cert-name">Modern JavaScript with ES6</h3>
-            <p class="cert-issuer">Issued by Coursera • 2025</p>
+            <span class="cert-badge-tag" data-i18n="certPage.card5Badge">Frontend & Async</span>
+            <h3 class="cert-name" data-i18n="certPage.card5Title">Modern JavaScript with ES6</h3>
+            <p class="cert-issuer" data-i18n="certPage.card5Issuer">Issued by Coursera • 2025</p>
           </div>
           <button
             class="cert-view-btn"
+            data-i18n="certPage.viewBtn"
             onclick="openCertModal('certifications/javascript_es6_certificate.jpg', 'Modern JavaScript with ES6')"
           >
             🔍 View Verified Certificate
@@ -156,12 +161,13 @@
         <!-- 6. ReactJS Bootcamp -->
         <div class="cert-card">
           <div>
-            <span class="cert-badge-tag">Full-Stack Bootcamp</span>
-            <h3 class="cert-name">JavaScript with ReactJS Bootcamp</h3>
-            <p class="cert-issuer">Issued by BIT Mesra • 2021</p>
+            <span class="cert-badge-tag" data-i18n="certPage.card6Badge">Full-Stack Bootcamp</span>
+            <h3 class="cert-name" data-i18n="certPage.card6Title">JavaScript with ReactJS Bootcamp</h3>
+            <p class="cert-issuer" data-i18n="certPage.card6Issuer">Issued by BIT Mesra • 2021</p>
           </div>
           <button
             class="cert-view-btn"
+            data-i18n="certPage.viewBtn"
             onclick="openCertModal('certifications/js_react_bootcamp.jpg', 'JavaScript with ReactJS Bootcamp')"
           >
             🔍 View Verified Certificate
@@ -171,11 +177,11 @@
         <!-- 7. Academic Degree -->
         <div class="cert-card" style="border-left: 4px solid var(--accent-primary);">
           <div>
-            <span class="cert-badge-tag">Academic Degree</span>
-            <h3 class="cert-name">Bachelor of Engineering (B.E.)</h3>
-            <p class="cert-issuer">Electronics & Communication Engineering</p>
+            <span class="cert-badge-tag" data-i18n="certPage.card7Badge">Academic Degree</span>
+            <h3 class="cert-name" data-i18n="certPage.card7Title">Bachelor of Engineering (B.E.)</h3>
+            <p class="cert-issuer" data-i18n="certPage.card7Issuer">Electronics & Communication Engineering</p>
           </div>
-          <p style="font-size: 0.88rem; color: var(--text-secondary);">
+          <p style="font-size: 0.88rem; color: var(--text-secondary);" data-i18n="certPage.card7Desc">
             Visvesvaraya Technological University (VTU), Karnataka, India. Full degree recognition across Germany (Anabin H+).
           </p>
         </div>
@@ -183,20 +189,20 @@
         <!-- 8. Web Component Development -->
         <div class="cert-card">
           <div>
-            <span class="cert-badge-tag">Java Technologies</span>
-            <h3 class="cert-name">Web Component Development using Java</h3>
-            <p class="cert-issuer">Issued by NIIT • 2013</p>
+            <span class="cert-badge-tag" data-i18n="certPage.card8Badge">Java Technologies</span>
+            <h3 class="cert-name" data-i18n="certPage.card8Title">Web Component Development using Java</h3>
+            <p class="cert-issuer" data-i18n="certPage.card8Issuer">Issued by NIIT • 2013</p>
           </div>
-          <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 14px;">
+          <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 14px;" data-i18n="certPage.card8Desc">
             Enterprise Java component lifecycle, Servlets, JSP, and multi-tier application architecture.
           </div>
         </div>
       </div>
 
       <div class="subpage-nav-bar" style="margin-top: 40px;">
-        <a href="index.html" class="btn btn-secondary">← Return to Home</a>
-        <a href="docs/Yathin_Kullachana_Somaiah_Resume_EN.pdf" target="_blank" class="btn btn-primary">Download Resume (PDF)</a>
-        <a href="contact.html" class="btn btn-outline">Contact Me</a>
+        <a href="index.html" class="btn btn-secondary" data-i18n="subpageNav.returnHome">← Return to Home</a>
+        <a href="docs/YathinKS_Resume_EN.pdf" target="_blank" class="btn btn-primary" data-i18n="subpageNav.downloadResume">Download Resume (PDF)</a>
+        <a href="contact.html" class="btn btn-outline" data-i18n="subpageNav.contactYathin">Contact Me</a>
       </div>
     </main>
 

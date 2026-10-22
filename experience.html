@@ -38,7 +38,7 @@
         </a>
 
         <ul class="nav-links" id="nav-links">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
           <li><a href="about.html" data-i18n="nav.about">About</a></li>
           <li><a href="experience.html" class="active" data-i18n="nav.experience">Employment</a></li>
           <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
@@ -51,7 +51,7 @@
           <button id="lang-toggle-btn" class="lang-toggle-btn" aria-label="Toggle Language" title="Switch Language">
             🌐 <span class="lang-text">EN</span>
           </button>
-          <a href="docs/Yathin_Kullachana_Somaiah_Resume_EN.pdf" target="_blank" class="resume-action-btn">
+          <a href="docs/YathinKS_Resume_EN.pdf" target="_blank" class="resume-action-btn">
             <span data-i18n="nav.resumeBtn">Resume (PDF)</span>
           </a>
           <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
@@ -64,9 +64,9 @@
 
     <main class="container" style="padding-top: 40px; padding-bottom: 60px;">
       <div class="section-header" style="text-align: left; max-width: 100%;">
-        <span class="section-eyebrow">Career History</span>
-        <h1 class="section-title">Employment & Technical Leadership</h1>
-        <p class="section-desc">
+        <span class="section-eyebrow" data-i18n="sections.experienceEyebrow">Career History</span>
+        <h1 class="section-title" data-i18n="sections.experienceTitle">Employment & Technical Leadership</h1>
+        <p class="section-desc" data-i18n="sections.experienceDesc">
           Detailed overview of full-time professional engineering roles, key responsibilities, architectural accomplishments, and quantifiable impact across global enterprises.
         </p>
       </div>
@@ -76,25 +76,25 @@
         <article class="experience-card">
           <div class="card-header-flex">
             <div class="card-role-block">
-              <h3>Senior Staff Engineer — Product & Platform Integration</h3>
+              <h3 data-i18n="experience.altimetrik.role">Senior Staff Engineer — Product & Platform Integration</h3>
               <div class="company-meta">
-                <span class="company-name">Altimetrik India Private Limited</span>
+                <span class="company-name" data-i18n="experience.altimetrik.company">Altimetrik India Private Limited</span>
                 <span>•</span>
-                <span class="company-loc">📍 Bengaluru, India (Client: Citibank BSI)</span>
+                <span class="company-loc" data-i18n="experience.altimetrik.location">📍 Bengaluru, India (Client: Citibank BSI)</span>
               </div>
             </div>
-            <span class="period-badge">Mar 2024 – Dec 2025</span>
+            <span class="period-badge" data-i18n="experience.altimetrik.period">Mar 2024 – Dec 2025</span>
           </div>
 
-          <p class="card-summary-p">
+          <p class="card-summary-p" data-i18n="experience.altimetrik.summary">
             Led the design, delivery, and scalability of backend platform services for Citibank BSI (Payments & E-Commerce) and BHN retail financial platforms.
           </p>
 
           <ul class="key-achievements-list">
-            <li><strong>High-Throughput Concurrency:</strong> Scaled event-driven microservices sustaining <strong>800+ TPS</strong> with minimal cloud resource overhead by enforcing distributed locks and multithreading optimization.</li>
-            <li><strong>Citibank BSI Payments:</strong> Operated high-concurrency event-driven transaction streams utilizing <strong>Apache Kafka</strong>, enforcing distributed transaction idempotency and delivery guarantees for rigorous financial auditability.</li>
-            <li><strong>20%+ Cloud Cost Optimization:</strong> Engineered containerized deployments on <strong>AWS (EC2, S3, SNS/SQS)</strong> and OpenShift, optimizing cloud allocation and reducing cloud spend by over 20%.</li>
-            <li><strong>BitBucket to GitHub Migration:</strong> Automated the end-to-end migration of nearly <strong>150 repositories</strong> with automated CI/CD and security vulnerability scanning via BlackDuck.</li>
+            <li data-i18n-html="experience.altimetrik.ach1"><strong>High-Throughput Concurrency:</strong> Scaled event-driven microservices sustaining <strong>800+ TPS</strong> with minimal cloud resource overhead by enforcing distributed locks and multithreading optimization.</li>
+            <li data-i18n-html="experience.altimetrik.ach2"><strong>Citibank BSI Payments:</strong> Operated high-concurrency event-driven transaction streams utilizing <strong>Apache Kafka</strong>, enforcing distributed transaction idempotency and delivery guarantees for rigorous financial auditability.</li>
+            <li data-i18n-html="experience.altimetrik.ach3"><strong>20%+ Cloud Cost Optimization:</strong> Engineered containerized deployments on <strong>AWS (EC2, S3, SNS/SQS)</strong> and OpenShift, optimizing cloud allocation and reducing cloud spend by over 20%.</li>
+            <li data-i18n-html="experience.altimetrik.ach4"><strong>BitBucket to GitHub Migration:</strong> Automated the end-to-end migration of nearly <strong>150 repositories</strong> with automated CI/CD and security vulnerability scanning via BlackDuck.</li>
           </ul>
 
           <div class="card-footer-tags">
@@ -117,25 +117,25 @@
         <article class="experience-card">
           <div class="card-header-flex">
             <div class="card-role-block">
-              <h3>Lead Platform & Backend Engineer</h3>
+              <h3 data-i18n="experience.apiwiz.role">Lead Platform & Backend Engineer</h3>
               <div class="company-meta">
-                <span class="company-name">APIwiz (Itorix Software Pvt. Ltd.)</span>
+                <span class="company-name" data-i18n="experience.apiwiz.company">APIwiz (Itorix Software Pvt. Ltd.)</span>
                 <span>•</span>
-                <span class="company-loc">📍 Bengaluru, India</span>
+                <span class="company-loc" data-i18n="experience.apiwiz.location">📍 Bengaluru, India</span>
               </div>
             </div>
-            <span class="period-badge">Jun 2022 – Jan 2024</span>
+            <span class="period-badge" data-i18n="experience.apiwiz.period">Jun 2022 – Jan 2024</span>
           </div>
 
-          <p class="card-summary-p">
+          <p class="card-summary-p" data-i18n="experience.apiwiz.summary">
             Pioneered the core server-side architecture and production lifecycle for flagship enterprise SaaS modules (API Compliance, Portfolio, Monitoring) from requirements discovery to scale.
           </p>
 
           <ul class="key-achievements-list">
-            <li><strong>API Compliance SaaS Module:</strong> Architected the flagship compliance module to enforce API contract standards and automated governance rules across enterprise gateways.</li>
-            <li><strong>1,000+ TPS Database Tuning:</strong> Designed relational and document schemas across <strong>PostgreSQL and MongoDB</strong>, executing zero-downtime database migrations under load and tuning queries to sustain 1,000+ TPS.</li>
-            <li><strong>API Gateways & In-Memory Grid:</strong> Integrated <strong>APISIX, Kong Gateway, and Hazelcast</strong> caching and rate limiting, achieving over <strong>20% cost reductions</strong> across AWS & GCP.</li>
-            <li><strong>Data Security & Cryptography:</strong> Implemented <strong>256-bit AES encryption</strong> and data masking protocols for resting and in-transit API payloads.</li>
+            <li data-i18n-html="experience.apiwiz.ach1"><strong>API Compliance SaaS Module:</strong> Architected the flagship compliance module to enforce API contract standards and automated governance rules across enterprise gateways.</li>
+            <li data-i18n-html="experience.apiwiz.ach2"><strong>1,000+ TPS Database Tuning:</strong> Designed relational and document schemas across <strong>PostgreSQL and MongoDB</strong>, executing zero-downtime database migrations under load and tuning queries to sustain 1,000+ TPS.</li>
+            <li data-i18n-html="experience.apiwiz.ach3"><strong>API Gateways & In-Memory Grid:</strong> Integrated <strong>APISIX, Kong Gateway, and Hazelcast</strong> caching and rate limiting, achieving over <strong>20% cost reductions</strong> across AWS & GCP.</li>
+            <li data-i18n-html="experience.apiwiz.ach4"><strong>Data Security & Cryptography:</strong> Implemented <strong>256-bit AES encryption</strong> and data masking protocols for resting and in-transit API payloads.</li>
           </ul>
 
           <div class="card-footer-tags">
@@ -158,24 +158,24 @@
         <article class="experience-card">
           <div class="card-header-flex">
             <div class="card-role-block">
-              <h3>Senior Technical Specialist — Backend Lead</h3>
+              <h3 data-i18n="experience.brillio.role">Senior Technical Specialist — Backend Lead</h3>
               <div class="company-meta">
-                <span class="company-name">Brillio Technologies</span>
+                <span class="company-name" data-i18n="experience.brillio.company">Brillio Technologies</span>
                 <span>•</span>
-                <span class="company-loc">📍 Bengaluru, India (Contractor at eBay)</span>
+                <span class="company-loc" data-i18n="experience.brillio.location">📍 Bengaluru, India (Contractor at eBay)</span>
               </div>
             </div>
-            <span class="period-badge">Aug 2021 – May 2022</span>
+            <span class="period-badge" data-i18n="experience.brillio.period">Aug 2021 – May 2022</span>
           </div>
 
-          <p class="card-summary-p">
+          <p class="card-summary-p" data-i18n="experience.brillio.summary">
             Spearheaded architectural design for modernization of eBay's internal enterprise People Management platform.
           </p>
 
           <ul class="key-achievements-list">
-            <li><strong>15 Microservices Modernization:</strong> Migrated legacy PL/SQL stored procedures and monolithic J2EE stack to 15 decoupled Spring Boot microservices.</li>
-            <li><strong>35% Latency Drop:</strong> Optimized relational schemas and indexes across Oracle and PostgreSQL, lowering database retrieval latency by 35% under peak traffic.</li>
-            <li><strong>SonarQube Automated Quality Gates:</strong> Enforced strict clean code standards and automated test coverage following TDD methodology.</li>
+            <li data-i18n-html="experience.brillio.ach1"><strong>15 Microservices Modernization:</strong> Migrated legacy PL/SQL stored procedures and monolithic J2EE stack to 15 decoupled Spring Boot microservices.</li>
+            <li data-i18n-html="experience.brillio.ach2"><strong>35% Latency Drop:</strong> Optimized relational schemas and indexes across Oracle and PostgreSQL, lowering database retrieval latency by 35% under peak traffic.</li>
+            <li data-i18n-html="experience.brillio.ach3"><strong>SonarQube Automated Quality Gates:</strong> Enforced strict clean code standards and automated test coverage following TDD methodology.</li>
           </ul>
 
           <div class="card-footer-tags">
@@ -197,24 +197,24 @@
         <article class="experience-card">
           <div class="card-header-flex">
             <div class="card-role-block">
-              <h3>Senior Backend Developer — Fintech & Onboarding</h3>
+              <h3 data-i18n="experience.iginfotech.role">Senior Backend Developer — Fintech & Onboarding</h3>
               <div class="company-meta">
-                <span class="company-name">IG Infotech (Derivatives Trading Broker)</span>
+                <span class="company-name" data-i18n="experience.iginfotech.company">IG Infotech (Derivatives Trading Broker)</span>
                 <span>•</span>
-                <span class="company-loc">📍 Bengaluru, India</span>
+                <span class="company-loc" data-i18n="experience.iginfotech.location">📍 Bengaluru, India</span>
               </div>
             </div>
-            <span class="period-badge">Dec 2019 – Aug 2021</span>
+            <span class="period-badge" data-i18n="experience.iginfotech.period">Dec 2019 – Aug 2021</span>
           </div>
 
-          <p class="card-summary-p">
+          <p class="card-summary-p" data-i18n="experience.iginfotech.summary">
             Engineered secure customer onboarding, KYC evaluation, and regulatory compliance modules for a premier global derivatives trading broker.
           </p>
 
           <ul class="key-achievements-list">
-            <li><strong>Automated Client Onboarding:</strong> Built Spring Boot authentication pipelines with OAuth2 and JWT protocols for fast user verification.</li>
-            <li><strong>25 Trading Applications:</strong> Managed and enhanced 25 critical low-latency trading applications, ensuring uptime during volatile market sessions.</li>
-            <li><strong>30% Defect Reduction:</strong> Authored comprehensive Functional and Acceptance test suites with <strong>Cucumber & JUnit</strong>, curbing post-release production defects.</li>
+            <li data-i18n-html="experience.iginfotech.ach1"><strong>Automated Client Onboarding:</strong> Built Spring Boot authentication pipelines with OAuth2 and JWT protocols for fast user verification.</li>
+            <li data-i18n-html="experience.iginfotech.ach2"><strong>25 Trading Applications:</strong> Managed and enhanced 25 critical low-latency trading applications, ensuring uptime during volatile market sessions.</li>
+            <li data-i18n-html="experience.iginfotech.ach3"><strong>30% Defect Reduction:</strong> Authored comprehensive Functional and Acceptance test suites with <strong>Cucumber & JUnit</strong>, curbing post-release production defects.</li>
           </ul>
 
           <div class="card-footer-tags">
@@ -235,24 +235,24 @@
         <article class="experience-card">
           <div class="card-header-flex">
             <div class="card-role-block">
-              <h3>Senior Software Engineer — Backend & Messaging</h3>
+              <h3 data-i18n="experience.nscglobal.role">Senior Software Engineer — Backend & Messaging</h3>
               <div class="company-meta">
-                <span class="company-name">NSC Global</span>
+                <span class="company-name" data-i18n="experience.nscglobal.company">NSC Global</span>
                 <span>•</span>
-                <span class="company-loc">📍 Bengaluru, India (Contracted to AT&T)</span>
+                <span class="company-loc" data-i18n="experience.nscglobal.location">📍 Bengaluru, India (Contracted to AT&T)</span>
               </div>
             </div>
-            <span class="period-badge">Feb 2017 – Dec 2019</span>
+            <span class="period-badge" data-i18n="experience.nscglobal.period">Feb 2017 – Dec 2019</span>
           </div>
 
-          <p class="card-summary-p">
+          <p class="card-summary-p" data-i18n="experience.nscglobal.summary">
             Engineered Java RESTful APIs and asynchronous messaging architecture for AT&T's telecommunications infrastructure and enterprise business systems.
           </p>
 
           <ul class="key-achievements-list">
-            <li><strong>RabbitMQ & IBM WebSphere MQ:</strong> Integrated queue and topic messaging objects to decouple high-throughput transaction pipelines across 27 services.</li>
-            <li><strong>JDK8 Microservices Transition:</strong> Upgraded legacy clients to modern Spring Boot microservices with JDK8 concurrency, improving execution velocity.</li>
-            <li><strong>Mission-Critical Telecom Uptime:</strong> Managed 27 high-performance enterprise applications serving millions of US users.</li>
+            <li data-i18n-html="experience.nscglobal.ach1"><strong>RabbitMQ & IBM WebSphere MQ:</strong> Integrated queue and topic messaging objects to decouple high-throughput transaction pipelines across 27 services.</li>
+            <li data-i18n-html="experience.nscglobal.ach2"><strong>JDK8 Microservices Transition:</strong> Upgraded legacy clients to modern Spring Boot microservices with JDK8 concurrency, improving execution velocity.</li>
+            <li data-i18n-html="experience.nscglobal.ach3"><strong>Mission-Critical Telecom Uptime:</strong> Managed 27 high-performance enterprise applications serving millions of US users.</li>
           </ul>
 
           <div class="card-footer-tags">
@@ -273,24 +273,24 @@
         <article class="experience-card">
           <div class="card-header-flex">
             <div class="card-role-block">
-              <h3>Senior Software Engineer — Enterprise Integration</h3>
+              <h3 data-i18n="experience.attra.role">Senior Software Engineer — Enterprise Integration</h3>
               <div class="company-meta">
-                <span class="company-name">Attra Infotech Pvt. Ltd.</span>
+                <span class="company-name" data-i18n="experience.attra.company">Attra Infotech Pvt. Ltd.</span>
                 <span>•</span>
-                <span class="company-loc">📍 Bengaluru, India (Client: GE Capital)</span>
+                <span class="company-loc" data-i18n="experience.attra.location">📍 Bengaluru, India (Client: GE Capital)</span>
               </div>
             </div>
-            <span class="period-badge">Oct 2013 – Feb 2017</span>
+            <span class="period-badge" data-i18n="experience.attra.period">Oct 2013 – Feb 2017</span>
           </div>
 
-          <p class="card-summary-p">
+          <p class="card-summary-p" data-i18n="experience.attra.summary">
             Developed enterprise web services, financial document automation, and scheduled ETL data workflows for GE Capital's commercial financing and banking solutions.
           </p>
 
           <ul class="key-achievements-list">
-            <li><strong>JAX-WS WebServices:</strong> Built contract-first WSDL service producers and consumers on IBM WebSphere 8.5 supporting multi-format requests.</li>
-            <li><strong>Form-to-PDF Conversion Engine:</strong> Automated dynamic PDF document rendering utilizing Adobe LiveCycle ES2.</li>
-            <li><strong>Control-M & Informatica ETL:</strong> Streamlined automation of enterprise scheduled data jobs and secure FTP file transfers.</li>
+            <li data-i18n-html="experience.attra.ach1"><strong>JAX-WS WebServices:</strong> Built contract-first WSDL service producers and consumers on IBM WebSphere 8.5 supporting multi-format requests.</li>
+            <li data-i18n-html="experience.attra.ach2"><strong>Form-to-PDF Conversion Engine:</strong> Automated dynamic PDF document rendering utilizing Adobe LiveCycle ES2.</li>
+            <li data-i18n-html="experience.attra.ach3"><strong>Control-M & Informatica ETL:</strong> Streamlined automation of enterprise scheduled data jobs and secure FTP file transfers.</li>
           </ul>
 
           <div class="card-footer-tags">
@@ -309,9 +309,9 @@
       </div>
 
       <div class="subpage-nav-bar" style="margin-top: 40px;">
-        <a href="index.html" class="btn btn-secondary">← Return to Home</a>
-        <a href="projects.html" class="btn btn-primary">Explore Featured Projects →</a>
-        <a href="docs/Yathin_Kullachana_Somaiah_Resume_EN.pdf" target="_blank" class="btn btn-outline">Download Resume (PDF)</a>
+        <a href="index.html" class="btn btn-secondary" data-i18n="subpageNav.returnHome">← Return to Home</a>
+        <a href="projects.html" class="btn btn-primary" data-i18n="subpageNav.viewProjects">Explore Featured Projects →</a>
+        <a href="docs/YathinKS_Resume_EN.pdf" target="_blank" class="btn btn-outline" data-i18n="subpageNav.downloadResume">Download Resume (PDF)</a>
       </div>
     </main>
 

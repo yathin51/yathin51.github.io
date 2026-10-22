@@ -38,7 +38,7 @@
         </a>
 
         <ul class="nav-links" id="nav-links">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
           <li><a href="about.html" class="active" data-i18n="nav.about">About</a></li>
           <li><a href="experience.html" data-i18n="nav.experience">Employment</a></li>
           <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
@@ -51,7 +51,7 @@
           <button id="lang-toggle-btn" class="lang-toggle-btn" aria-label="Toggle Language" title="Switch Language">
             🌐 <span class="lang-text">EN</span>
           </button>
-          <a href="docs/Yathin_Kullachana_Somaiah_Resume_EN.pdf" target="_blank" class="resume-action-btn">
+          <a href="docs/YathinKS_Resume_EN.pdf" target="_blank" class="resume-action-btn">
             <span data-i18n="nav.resumeBtn">Resume (PDF)</span>
           </a>
           <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
@@ -64,41 +64,41 @@
 
     <main class="container" style="padding-top: 40px; padding-bottom: 60px;">
       <div class="section-header" style="text-align: left; max-width: 100%;">
-        <span class="section-eyebrow">Professional Profile</span>
-        <h1 class="section-title">About Me</h1>
-        <p class="section-desc">
+        <span class="section-eyebrow" data-i18n="aboutPage.eyebrow">Professional Profile</span>
+        <h1 class="section-title" data-i18n="aboutPage.title">About Me</h1>
+        <p class="section-desc" data-i18n="aboutPage.subtitle">
           Senior Backend & Platform Software Engineer specializing in distributed JVM architectures, event streaming, and cloud platforms.
         </p>
       </div>
 
       <div class="hero-grid" style="align-items: start; margin-bottom: 40px;">
         <div class="about-text-content">
-          <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 20px;">
+          <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 20px;" data-i18n="aboutPage.p1">
             I am an Oracle-certified Senior Staff Engineer with over 10 years of professional software craftsmanship experience.
             My career has been devoted to engineering high-availability, low-latency transaction engines, event-driven streaming
             pipelines, and API gateways across demanding domains including investment banking, derivatives trading, and enterprise SaaS.
           </p>
 
-          <p style="font-size: 1.05rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 24px;">
+          <p style="font-size: 1.05rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 24px;" data-i18n-html="aboutPage.p2">
             Throughout my career at companies like <strong>Altimetrik (Citibank)</strong>, <strong>APIwiz</strong>, <strong>Brillio (eBay)</strong>,
             <strong>IG Infotech</strong>, and <strong>NSC Global (AT&T)</strong>, I have led technical modernizations that transformed legacy
             monoliths into decoupled, containerized microservices handling upwards of <strong>1,000 TPS</strong> while lowering cloud expenditure by <strong>20%+</strong>.
           </p>
 
           <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 24px; margin-bottom: 28px;">
-            <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--accent-cyan);">Core Engineering Tenets</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--accent-cyan);" data-i18n="aboutPage.tenetsTitle">Core Engineering Tenets</h3>
             <ul class="key-achievements-list" style="margin-bottom: 0;">
-              <li><strong>Zero-Tolerance for Data Inconsistency:</strong> Designing strict idempotent event consumers, distributed locks (Redis/Redlock), and resilient transaction boundaries.</li>
-              <li><strong>Pragmatic Modernization:</strong> Migrating legacy PL/SQL, J2EE, and SOAP systems into clean, observable Spring Boot microservices without business downtime.</li>
-              <li><strong>Cloud & Resource Stewardship:</strong> Squeezing maximum throughput out of minimal cloud instances on AWS and GCP through Hazelcast caching and reactive JVM concurrency.</li>
-              <li><strong>Developer Velocity & Quality:</strong> Leveraging modern AI-assisted engineering tools (Claude Code, Cursor) alongside TDD, Cucumber BDD, and SonarQube quality gates.</li>
+              <li data-i18n-html="aboutPage.tenet1"><strong>Zero-Tolerance for Data Inconsistency:</strong> Designing strict idempotent event consumers, distributed locks (Redis/Redlock), and resilient transaction boundaries.</li>
+              <li data-i18n-html="aboutPage.tenet2"><strong>Pragmatic Modernization:</strong> Migrating legacy PL/SQL, J2EE, and SOAP systems into clean, observable Spring Boot microservices without business downtime.</li>
+              <li data-i18n-html="aboutPage.tenet3"><strong>Cloud & Resource Stewardship:</strong> Squeezing maximum throughput out of minimal cloud instances on AWS and GCP through Hazelcast caching and reactive JVM concurrency.</li>
+              <li data-i18n-html="aboutPage.tenet4"><strong>Developer Velocity & Quality:</strong> Leveraging modern AI-assisted engineering tools (Claude Code, Cursor) alongside TDD, Cucumber BDD, and SonarQube quality gates.</li>
             </ul>
           </div>
 
           <div class="hero-cta-group">
-            <a href="experience.html" class="btn btn-primary">Explore Employment Details →</a>
-            <a href="docs/Yathin_Kullachana_Somaiah_Resume_EN.pdf" target="_blank" class="btn btn-secondary">Download Resume (EN)</a>
-            <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+            <a href="experience.html" class="btn btn-primary" data-i18n="aboutPage.btnEmployment">Explore Employment Details →</a>
+            <a href="docs/YathinKS_Resume_EN.pdf" target="_blank" class="btn btn-secondary resume-action-btn" data-i18n="aboutPage.btnResumeEn">Download Resume (EN)</a>
+            <a href="contact.html" class="btn btn-outline" data-i18n="aboutPage.btnContact">Get In Touch</a>
           </div>
         </div>
 
@@ -110,13 +110,13 @@
           </div>
 
           <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 20px;">
-            <h4 style="font-size: 1.05rem; margin-bottom: 12px; color: var(--text-primary);">Quick Facts</h4>
+            <h4 style="font-size: 1.05rem; margin-bottom: 12px; color: var(--text-primary);" data-i18n="aboutPage.quickFactsTitle">Quick Facts</h4>
             <div style="display: flex; flex-direction: column; gap: 10px; font-size: 0.92rem; color: var(--text-secondary);">
-              <div><strong>📍 Location:</strong> Saarbrücken, Germany</div>
-              <div><strong>⚡ Work Authorization:</strong> Unrestricted German Work Permit</div>
-              <div><strong>🎓 Education:</strong> B.E. in Electronics & Communication (VTU)</div>
-              <div><strong>🌐 Languages:</strong> English (Fluent), German (B2)</div>
-              <div><strong>📜 Certified:</strong> Oracle Java Programmer, Kafka Fundamentals, Generative AI Mastermind</div>
+              <div data-i18n-html="aboutPage.qfLocation"><strong>📍 Location:</strong> Saarbrücken, Germany</div>
+              <div data-i18n-html="aboutPage.qfPermit"><strong>⚡ Work Authorization:</strong> Unrestricted German Work Permit</div>
+              <div data-i18n-html="aboutPage.qfEdu"><strong>🎓 Education:</strong> B.E. in Electronics & Communication (VTU, Anabin H+)</div>
+              <div data-i18n-html="aboutPage.qfLang"><strong>🌐 Languages:</strong> English (Fluent), German (B1)</div>
+              <div data-i18n-html="aboutPage.qfCert"><strong>📜 Certified:</strong> Oracle Java Programmer, Kafka Fundamentals, Generative AI Mastermind</div>
             </div>
           </div>
         </div>
