@@ -38,7 +38,7 @@
         </a>
 
         <ul class="nav-links" id="nav-links">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
           <li><a href="about.html" data-i18n="nav.about">About</a></li>
           <li><a href="experience.html" data-i18n="nav.experience">Employment</a></li>
           <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
@@ -51,7 +51,7 @@
           <button id="lang-toggle-btn" class="lang-toggle-btn" aria-label="Toggle Language" title="Switch Language">
             🌐 <span class="lang-text">EN</span>
           </button>
-          <a href="docs/Yathin_Kullachana_Somaiah_Resume_EN.pdf" target="_blank" class="resume-action-btn">
+          <a href="docs/YathinKS_Resume_EN.pdf" target="_blank" class="resume-action-btn">
             <span data-i18n="nav.resumeBtn">Resume (PDF)</span>
           </a>
           <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
@@ -64,9 +64,9 @@
 
     <main class="container" style="padding-top: 40px; padding-bottom: 60px;">
       <div class="section-header" style="text-align: left; max-width: 100%;">
-        <span class="section-eyebrow">Technical Mastery</span>
-        <h1 class="section-title">Skills & Architecture Matrix</h1>
-        <p class="section-desc">
+        <span class="section-eyebrow" data-i18n="skillsPage.eyebrow">Technical Mastery</span>
+        <h1 class="section-title" data-i18n="skillsPage.title">Skills & Architecture Matrix</h1>
+        <p class="section-desc" data-i18n="skillsPage.subtitle">
           Structured inventory of core languages, enterprise backend frameworks, distributed streaming tools, and DevOps infrastructure.
         </p>
       </div>
@@ -79,6 +79,7 @@
           id="skills-search"
           class="skills-search-input"
           placeholder="Filter skills (e.g. Kafka, Java, Docker, Spring, AWS, Postgres)..."
+          data-i18n-placeholder="skillsPage.searchPlaceholder"
           aria-label="Filter skills"
         />
       </div>
@@ -88,7 +89,7 @@
         <div class="skill-category-card">
           <div class="skill-category-header">
             <span class="skill-category-icon">💻</span>
-            <h3 class="skill-category-title">Languages & Runtimes</h3>
+            <h3 class="skill-category-title" data-i18n="skillsPage.catLanguages">Languages & Runtimes</h3>
           </div>
           <div class="skill-items-wrap">
             <span class="skill-item-chip">
@@ -123,7 +124,7 @@
         <div class="skill-category-card">
           <div class="skill-category-header">
             <span class="skill-category-icon">⚙️</span>
-            <h3 class="skill-category-title">Backend & Frameworks</h3>
+            <h3 class="skill-category-title" data-i18n="skillsPage.catBackend">Backend & Frameworks</h3>
           </div>
           <div class="skill-items-wrap">
             <span class="skill-item-chip">
@@ -147,7 +148,7 @@
         <div class="skill-category-card">
           <div class="skill-category-header">
             <span class="skill-category-icon">🏗️</span>
-            <h3 class="skill-category-title">Architecture & System Design</h3>
+            <h3 class="skill-category-title" data-i18n="skillsPage.catArch">Architecture & System Design</h3>
           </div>
           <div class="skill-items-wrap">
             <span class="skill-item-chip">Distributed Systems Architecture</span>
@@ -165,7 +166,7 @@
         <div class="skill-category-card">
           <div class="skill-category-header">
             <span class="skill-category-icon">🔄</span>
-            <h3 class="skill-category-title">Streaming, Queues & Gateways</h3>
+            <h3 class="skill-category-title" data-i18n="skillsPage.catStreaming">Streaming, Queues & Gateways</h3>
           </div>
           <div class="skill-items-wrap">
             <span class="skill-item-chip">
@@ -195,7 +196,7 @@
         <div class="skill-category-card">
           <div class="skill-category-header">
             <span class="skill-category-icon">☁️</span>
-            <h3 class="skill-category-title">Cloud, Containers & DevOps</h3>
+            <h3 class="skill-category-title" data-i18n="skillsPage.catCloud">Cloud, Containers & DevOps</h3>
           </div>
           <div class="skill-items-wrap">
             <span class="skill-item-chip">
@@ -228,7 +229,7 @@
         <div class="skill-category-card">
           <div class="skill-category-header">
             <span class="skill-category-icon">📊</span>
-            <h3 class="skill-category-title">Databases & Observability</h3>
+            <h3 class="skill-category-title" data-i18n="skillsPage.catDatabases">Databases & Observability</h3>
           </div>
           <div class="skill-items-wrap">
             <span class="skill-item-chip">
@@ -264,9 +265,9 @@
       </div>
 
       <div class="subpage-nav-bar" style="margin-top: 40px;">
-        <a href="index.html" class="btn btn-secondary">← Return to Home</a>
-        <a href="experience.html" class="btn btn-primary">View Employment Insights →</a>
-        <a href="contact.html" class="btn btn-outline">Contact Yathin</a>
+        <a href="index.html" class="btn btn-secondary" data-i18n="subpageNav.returnHome">← Return to Home</a>
+        <a href="experience.html" class="btn btn-primary" data-i18n="subpageNav.viewEmployment">View Employment Insights →</a>
+        <a href="contact.html" class="btn btn-outline" data-i18n="subpageNav.contactYathin">Contact Yathin</a>
       </div>
     </main>
 

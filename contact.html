@@ -38,7 +38,7 @@
         </a>
 
         <ul class="nav-links" id="nav-links">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
           <li><a href="about.html" data-i18n="nav.about">About</a></li>
           <li><a href="experience.html" data-i18n="nav.experience">Employment</a></li>
           <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
@@ -51,7 +51,7 @@
           <button id="lang-toggle-btn" class="lang-toggle-btn" aria-label="Toggle Language" title="Switch Language">
             🌐 <span class="lang-text">EN</span>
           </button>
-          <a href="docs/Yathin_Kullachana_Somaiah_Resume_EN.pdf" target="_blank" class="resume-action-btn">
+          <a href="docs/YathinKS_Resume_EN.pdf" target="_blank" class="resume-action-btn">
             <span data-i18n="nav.resumeBtn">Resume (PDF)</span>
           </a>
           <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
@@ -64,17 +64,17 @@
 
     <main class="container" style="padding-top: 40px; padding-bottom: 60px;">
       <div class="section-header" style="text-align: left; max-width: 100%;">
-        <span class="section-eyebrow">Professional Inquiries</span>
-        <h1 class="section-title">Get In Touch</h1>
-        <p class="section-desc">
+        <span class="section-eyebrow" data-i18n="contactPage.eyebrow">Professional Inquiries</span>
+        <h1 class="section-title" data-i18n="contactPage.title">Get In Touch</h1>
+        <p class="section-desc" data-i18n="contactPage.subtitle">
           I am actively open to Senior Staff, Lead Backend Engineer, and Distributed Systems Architect opportunities in Germany and Europe.
         </p>
       </div>
 
       <div class="contact-card-main">
         <div class="contact-info-col">
-          <h3>Let’s Connect</h3>
-          <p>
+          <h3 data-i18n="contactPage.connectTitle">Let’s Connect</h3>
+          <p data-i18n="contactPage.connectDesc">
             Feel free to reach out directly via email or professional networks to discuss potential roles, architectural consultations, or engineering collaborations.
           </p>
 
@@ -83,7 +83,7 @@
             <div class="contact-channel-item">
               <div class="channel-icon">✉️</div>
               <div class="channel-details">
-                <span class="channel-label">Email</span>
+                <span class="channel-label" data-i18n="contactPage.emailLabel">Email</span>
                 <a href="mailto:yathin.ksomaiah@gmail.com" class="channel-val">yathin.ksomaiah@gmail.com</a>
               </div>
               <button class="copy-btn" data-copy="yathin.ksomaiah@gmail.com" title="Copy Email">
@@ -95,8 +95,8 @@
             <div class="contact-channel-item">
               <div class="channel-icon">📍</div>
               <div class="channel-details">
-                <span class="channel-label">Current Location</span>
-                <span class="channel-val">Saarbrücken, Germany</span>
+                <span class="channel-label" data-i18n="contactPage.locationLabel">Current Location</span>
+                <span class="channel-val" data-i18n="contactPage.locationVal">Saarbrücken, Germany</span>
               </div>
             </div>
 
@@ -104,8 +104,8 @@
             <div class="contact-channel-item">
               <div class="channel-icon">⚡</div>
               <div class="channel-details">
-                <span class="channel-label">Work Authorization</span>
-                <span class="channel-val">Unrestricted German Work Permit (No sponsorship needed)</span>
+                <span class="channel-label" data-i18n="contactPage.permitLabel">Work Authorization</span>
+                <span class="channel-val" data-i18n="contactPage.permitVal">Unrestricted German Work Permit (No sponsorship needed)</span>
               </div>
             </div>
 
@@ -113,7 +113,7 @@
             <div class="contact-channel-item">
               <div class="channel-icon">🔗</div>
               <div class="channel-details">
-                <span class="channel-label">Online Presence</span>
+                <span class="channel-label" data-i18n="contactPage.onlineLabel">Online Presence</span>
                 <div style="display: flex; gap: 14px; margin-top: 4px;">
                   <a href="https://www.linkedin.com/in/yathin-ks/" target="_blank" style="font-weight: 600;">
                     LinkedIn Profile ↗
@@ -130,12 +130,12 @@
 
         <div class="contact-actions-col">
           <div class="resume-download-box">
-            <h4>Application Materials</h4>
-            <p>Download official PDF resumes tailored for technical hiring teams and recruiters:</p>
+            <h4 data-i18n="contactPage.materialsTitle">Application Materials</h4>
+            <p data-i18n="contactPage.materialsDesc">Download official PDF resumes tailored for technical hiring teams and recruiters:</p>
 
             <div class="resume-btn-stack">
               <a
-                href="docs/Yathin_Kullachana_Somaiah_Resume_EN.pdf"
+                href="docs/YathinKS_Resume_EN.pdf"
                 target="_blank"
                 class="btn btn-primary"
                 download
@@ -145,11 +145,11 @@
                   <polyline points="7 10 12 15 17 10" />
                   <line x1="12" y1="15" x2="12" y2="3" />
                 </svg>
-                Download English Resume (PDF)
+                <span data-i18n="contactPage.downloadEn">Download English Resume (PDF)</span>
               </a>
 
               <a
-                href="docs/Yathin_Kullachana_Somaiah_Lebenslauf_DE.pdf"
+                href="docs/YathinKS_Lebenslauf_DE.pdf"
                 target="_blank"
                 class="btn btn-secondary"
                 download
@@ -159,12 +159,13 @@
                   <polyline points="7 10 12 15 17 10" />
                   <line x1="12" y1="15" x2="12" y2="3" />
                 </svg>
-                Download German Lebenslauf (PDF)
+                <span data-i18n="contactPage.downloadDe">Download German Lebenslauf (PDF)</span>
               </a>
 
               <a
                 href="mailto:yathin.ksomaiah@gmail.com?subject=Senior%20Staff%20Engineer%20Opportunity"
                 class="btn btn-outline"
+                data-i18n="contactPage.sendEmail"
               >
                 Send Direct Email Message ✉️
               </a>
@@ -174,8 +175,8 @@
       </div>
 
       <div class="subpage-nav-bar" style="margin-top: 40px;">
-        <a href="index.html" class="btn btn-secondary">← Return to Home</a>
-        <a href="experience.html" class="btn btn-primary">Review Employment History →</a>
+        <a href="index.html" class="btn btn-secondary" data-i18n="subpageNav.returnHome">← Return to Home</a>
+        <a href="experience.html" class="btn btn-primary" data-i18n="subpageNav.viewEmployment">Review Employment History →</a>
       </div>
     </main>
 
